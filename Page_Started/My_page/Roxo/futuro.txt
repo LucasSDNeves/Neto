@@ -1,0 +1,6 @@
+-Mostrar um preview de como ficará no mural com as abas, e as coisas escritas
+
+-Deixar ele pequeno pra expandir
+-Deixar o mural com a animação ao adicionar ou quando quiser ver ele
+
+-Deixar o write mais animado

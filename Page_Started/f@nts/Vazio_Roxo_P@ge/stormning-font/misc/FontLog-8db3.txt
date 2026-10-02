@@ -1,0 +1,11 @@
+1/25/2015, Initial design, Completion of basic Latin equivalents, and Nordic Latin Character equivalents.
+
+Elder & Younger Futhark Runes by Robert Jablonski 
+
+Medieval & Dalecarlian Runes by Mew Too
+
+Pentimal Numeral Runes by Robert Jablonski & Mew Too
+
+All characters in this font are Nordic Runes from the Elder Futhark, Younger Futhark, Scandinavian Medieval Runic alphabet, Norse Pentimal Numeric system and Swedish Dalecarlian Runic alphabet.
+
+All Characters are equivalent to Latin characters.

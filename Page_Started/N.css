@@ -1,0 +1,635 @@
+/* #region config-based */
+html {
+    /* Cor de fundo do site. */
+    background-color: #313135;
+        /* (!) Nesse caso de todo o arquivo HTML. */
+    
+    /* background: url(/Neto/Page_Started/Imgs/Gojo.jpg); */
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+body {
+    /* Cor de fundo do site. */
+    background-color: #313135;
+    /* Vai definir a fonte de tudo que tiver no corpo do site, e não tiver alguma fonte especifica.*/
+    font-family: Arial, sans-serif;
+    /* Seria o tamanho máximo que a página pode chegar. (Largura)*/
+    max-width: 500px;
+    /* É um espaço de fora da borda.*/
+    margin: 35px 45px 10px 45px;
+    /* O tanto que a parte de dentro ficará afastado da borda. */
+    padding: 20px 35px 0px 35px;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+/* #endregion */
+
+/* #region part-Principal */
+.Princip {
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.Princip h1 {
+    /* Defini a cor do texto. */
+    color: #0092FF;
+    /* Tamanho da fonte */
+    font-size: 37.5px;
+    /* Defini uma posição para o texto */
+    text-align: left;
+    /* É um espaço de fora da borda.*/
+    margin: -30px 270px 0px -50px;
+
+    /* Vai definir a fonte de tudo que tiver no corpo do site, e não tiver alguma fonte especifica.*/
+    font-family: "Black Ops One", system-ui;
+    /* Deixa a letra em negrito. */
+    font-weight: 300;
+    /* Define um estilo para a letra. */
+    font-style: oblique;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+hr {
+    /* Define a largura da linha */
+    width: 500px;
+    /* Define a grossura da linha */
+    height: 2px;
+    /* Cor de fundo do site. */
+    background-color: #535353;
+    /* É um espaço de fora da borda.*/
+    margin: 48px 0px 32px 0px;
+    
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.Princip p {
+    /* Defini a cor do texto. */
+    color: #b9b9b9;
+    /* Defini uma posição para o texto */
+    text-align: center;
+    /* Cria um espaçamento */
+    line-height: 1.2;
+    /* Tamanho da fonte */
+    font-size: 13.2px;
+    /* O tanto que a parte de dentro ficará afastado da borda. */
+    padding: 20px 0px 0px 0px;
+
+    font-family: 'People';
+    font-size: x-large;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+/* #endregion */
+
+/* #region Describ */
+.Describ {
+    /* Aqui ele se desconecta de todas as outras partes, e crava uma posição fixa. */
+    position: fixed;
+    /* Aqui ele coloca o texto no fundo, sem nenhuma alteração, no caso subdindo saindo do fim. */
+    bottom: 0;
+    /* Aqui ele coloca o texto na esquerda, sem nenhuma alteração, no caso indo pra direita */
+    left: 0;
+    /* Aqui significa que a caixa (hitbox) será a largura da tela inteira */
+    width: 100%;
+        /* (!) Como ele está colado na esquerda, ele tá indo para o centro com 100%. */
+    /* Defini uma posição para o texto */
+    text-align: center;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.Describ p {
+    /* Defini a cor do texto. */
+    color: #ffffff;
+    /* Tamanho da fonte */
+    font-size: 9.5px;
+    /* Cria um espaçamento */
+    line-height: 2.5px;
+
+    font-family: "Indie Flower", cursive;
+    font-weight: 550;
+    font-size: small;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+/* #endregion */
+
+/* #region button-hidden */
+.link-botao, .link-botao:visited {
+    /* Aqui adiciona uma decoração para o texto. */
+    text-decoration: none;
+    /* Defini a cor do texto. */
+    color: inherit;
+    /* Altera o comportamento da caixa. */
+    display: flex;
+}
+
+.anel-acabamento {
+    /* Define a largura. */
+    width: 42px;
+    /* Define a altura. */
+    height: 42px;
+    /* Nível" da curva na borda */
+    border-radius: 50%;
+    /* Cor de fundo do site. */
+    background: #2a2e3300;
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 1.8px solid #ced4da17 !important;
+
+    /* Altera o comportamento da caixa. */
+    display: flex;
+    /* Altera o alinhamento horizontalmente. */
+    justify-content: center;
+    /* Altera o alinhamento verticalmente. */
+    align-items: center;
+
+    /* É um espaço de fora da borda.*/
+    margin: -42px 0px 0px 476px;
+
+    /* Defini o nível de opacidade do elemento. */
+    opacity: 0;
+    /* Define como o cursor ficara passar por ele. */
+    cursor: pointer;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.anel-acabamento:hover {
+    /* Defini o nível de opacidade do elemento. */
+    opacity: 1;
+}
+
+.vala-fina {
+    /* Define a largura. */
+    width: 42px;
+    /* Define a altura. */
+    height: 42px;
+    /* Nível" da curva na borda */
+    border-radius: 50%;
+    /* Cor de fundo do site. */
+    background: #0d0f1110;
+
+    /* Altera o comportamento da caixa. */
+    display: flex;
+    /* Altera o alinhamento horizontalmente. */
+    justify-content: center;
+    /* Altera o alinhamento verticalmente. */
+    align-items: center;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.botao-afundado {
+    /* Define a largura. */
+    width: 35px;
+    /* Define a altura. */
+    height: 35px;
+    /* Nível" da curva na borda */
+    border-radius: 45%;
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: none;
+    /* Define como o cursor ficara passar por ele. */
+    cursor: pointer;
+
+    /* Cor de fundo do site. */
+    background: #313335;
+    /* Defini a cor do texto. */
+    color: #353135;
+    /* color: #000000; */
+
+    /* Altera o comportamento da caixa. */
+    display: flex;
+    /* Altera o alinhamento horizontalmente. */
+    justify-content: center;
+    /* Altera o alinhamento verticalmente. */
+    align-items: center;
+
+    /* Faz uma espécie de animação, dependendo de como você quer que aconteça. */
+    transition: 0.15s ease;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.botao-afundado:hover {
+    /* Define a largura. */
+    width: 35px;
+    /* Define a altura. */
+    height: 35px;
+    /* Nível" da curva na borda */
+    border-radius: 45%;
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: none;
+    /* Define como o cursor ficara passar por ele. */
+    cursor: pointer;
+
+    /* Cor de fundo do site. */
+    background: #35000071;
+    /* Defini a cor do texto. */
+    color: #ffee0018;
+
+    /* Altera o comportamento da caixa. */
+    display: flex;
+    /* Altera o alinhamento horizontalmente. */
+    justify-content: center;
+    /* Altera o alinhamento verticalmente. */
+    align-items: center;
+
+    /* Faz uma espécie de animação, dependendo de como você quer que aconteça. */
+    transition: 0.15s ease;
+    /* Altera o comportamento da caixa. */
+    display: flex;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8;
+}
+
+.botao-afundado:active {
+    /* Cor de fundo do site. */
+    background: #1a1a1a;
+    /* Faz uma espécie de animação, dependendo de como você quer que aconteça. */
+    transform: scale(1.05);
+    /* Defini a cor do texto. */
+    color: #e6cf02;
+    
+    /* Deixa o bloco inteiro clicável. */
+    display: block;
+
+    /* Aqui adiciona uma borda, uma cor (sólida) e tantos px. */
+    border: 0px solid #ff4cd8; 
+}
+/* #endregion */
+
+/* #region password */
+input:invalid {
+    /* Define a borda do elemento. */
+    border: 2px solid #b90808 !important;
+    /* É a cor de fundo do elemento. */
+    background-color: #ffffff !important;
+}
+
+.fundo-modal {
+    /* Define o comportamento de exibição do elemento. */
+    display: none;
+    /* Define o método de posicionamento do elemento. */
+    position: fixed;
+    /* Define a ordem de empilhamento vertical do elemento. */
+    z-index: 999;
+    /* Posiciona o elemento a partir da borda esquerda. */
+    left: 0px;
+    /* Posiciona o elemento a partir da borda superior. */
+    top: 0px;
+    /* Largura do elemento. */
+    width: 100%;
+    /* Altura do elemento. */
+    height: 100%;
+    /* É a cor de fundo do elemento. */
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.conteudo-modal {
+    /* É a cor de fundo do elemento. */
+    background-color: #b1b0b0;
+    /* É a margem externa do elemento. */
+    margin: 15vh auto;
+    /* É o espaçamento interno do elemento. */
+    padding: 10px 30px 15px 30px;
+    /* Arredonda os cantos do elemento. */
+    border-radius: 25px 5px 25px 5px;
+    /* É a largura do elemento. */
+    width: 52%;
+    /* É a largura máxima do elemento. */
+    max-width: 400px;
+    /* Define o método de posicionamento do elemento. */
+    position: relative;
+    /* Aplica uma sombra projetada ao redor do elemento. */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Alinha o texto do elemento. */
+    text-align: center;
+    /* Define a família da fonte do texto. */
+    font-family: Arial, sans-serif;
+    /* Altera o cálculo do modelo de caixa padrão. */
+    box-sizing: border-box;
+}
+
+.conteudo-modal p {
+    /* É a cor do texto do elemento. */
+    color: #000000
+}
+
+.fundo-modal.mostrar {
+    /* Define o comportamento de exibição do elemento. */
+    display: block;
+}
+
+.botao-fechar {
+    /* Define o método de posicionamento do elemento. */
+    position: absolute;
+    /* Posiciona o elemento a partir da borda superior. */
+    top: 10px;
+    /* Posiciona o elemento a partir da borda direita. */
+    right: 15px;
+    /* É o tamanho da fonte do texto. */
+    font-size: 28px;
+    /* Define todas as propriedades de fundo em uma única declaração. */
+    background: none;
+    /* Define a borda do elemento. */
+    border: none;
+    /* Define o tipo de cursor do mouse. */
+    cursor: pointer;
+    /* É a cor do texto do elemento. */
+    color: #d1cfcf;
+}
+
+.grupo-campo { margin: 20px 0; text-align: left; }
+.grupo-campo label { display: block; margin-bottom: 8px; font-weight: bold; }
+.grupo-campo input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;}
+.botao-enviar { width: 100%; padding: 12px; background-color: #28a745; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; }
+.texto-erro { color: #dc3545 !important; margin-top: 15px; font-weight: bold; }
+/* #endregion */
+
+/* #region Fonts */
+@font-face {
+    font-family: 'mortega';
+    src: url(../Page_Started/f@nts/mortega/Mortega.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'People';
+    src: url(../Page_Started/f@nts/privilege_people/Privilege\ People.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* #endregion */
+
+/* #region calendar */
+:root {
+    --cor-fundo-bloco: #424246;
+    --cor-linhas-borda: #55555a;
+    --cor-texto-principal: #ffffff;
+    --cor-texto-secundario: #aaaaaa;
+    --cor-tema-destaque: #ff4cd8;
+
+    --azul-tag-bg: #e3f2fd;
+    --azul-tag-txt: #0d47a1;
+    --verde-tag-bg: #e8f5e9;
+    --verde-tag-txt: #1b5e20;
+}
+
+.planner-calendar {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 20px;
+
+    border: 0px solid #ff4cd8;
+}
+
+.planner-calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 0px solid #ff4cd8;
+}
+
+.planner-calendar-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--cor-texto-principal);
+    
+    border: 0px solid #ff4cd8;
+}
+
+.view-controls button {
+    background: #424246;
+    color: #ffffff;
+    border: 1px solid var(--cor-linhas-borda);
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 11px;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.view-controls button.active {
+    background: var(--cor-tema-destaque);
+    border-color: var(--cor-tema-destaque);
+    color: #ffffff;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 4px;
+    width: 100%;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.weekday-label {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--cor-texto-secundario);
+    padding-bottom: 4px;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-cell {
+    border: 1px solid var(--cor-linhas-borda);
+    border-radius: 4px;
+    background: var(--cor-fundo-bloco);
+    
+    min-height: 45px; 
+    padding: 4px;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: var(--cor-texto-principal);
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-cell-empty {
+    background: transparent;
+    border: none;
+    pointer-events: none;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-cell.active-day {
+    border-color: var(--cor-tema-destaque);
+    box-shadow: 0 0 4px var(--cor-tema-destaque);
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-cell-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-name-mini {
+    display: none;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: var(--cor-texto-secundario);
+    
+    border: 0px solid #ff4cd8;
+}
+
+.date-number {
+    font-weight: bold;
+    font-size: 10px;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-cell.active-day .date-number {
+    background: var(--cor-tema-destaque);
+    color: #ffffff;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.day-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 3px;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.note-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--azul-tag-bg);
+    color: var(--azul-tag-txt);
+    border-radius: 2px;
+    border-left: 2px solid #2196f3;
+    font-size: 8px;
+    padding: 1px 2px;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.note-row.tag-green {
+    background: var(--verde-tag-bg);
+    color: var(--verde-tag-txt);
+    border-left-color: #4caf50;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.note-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.delete-note-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    opacity: 0.7;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 8px;
+    padding-left: 2px;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.add-btn-dummy {
+    display: none;
+    
+    border: 0px solid #ff4cd8;
+}
+
+/* Linha da Semana Inteira */
+.planner-calendar.view-weekly .weekday-label {
+    display: none;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.planner-calendar.view-weekly .calendar-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4px;
+    width: 100%;
+    
+    border: 1px solid #ff4cd8;
+}
+
+.planner-calendar.view-weekly .day-cell {
+    display: none;
+    min-height: 80px;
+    height: auto;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.planner-calendar.view-weekly .day-cell.in-week-filter {
+    display: flex;
+    flex: 1;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.planner-calendar.view-weekly .day-name-mini {
+    display: block;
+    
+    border: 0px solid #ff4cd8;
+}
+
+.planner-calendar.view-weekly .add-btn-dummy {
+    display: block;
+    font-size: 8px;
+    color: var(--cor-texto-secundario);
+    text-align: center;
+    border: 1px dashed var(--cor-linhas-borda);
+    border-radius: 2px;
+    margin-top: auto;
+    cursor: pointer;
+    
+    border: 0px solid #ff4cd8;
+}
+/* #endregion */

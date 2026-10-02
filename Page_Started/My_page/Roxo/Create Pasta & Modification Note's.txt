@@ -1,0 +1,2 @@
+Primeiro, acho que a ideia da aba estar meio apagada, ou escondida,  ou invisível com bordas pontilhadas, ou a aba apenas aparece quando passa o mouse por cima onde o texto so um pouco e fica em destaque com o fundo transparente e as abas aparecem, isso é uma ideia para depois.
+o que quero fazer agora é o design das abas envolta

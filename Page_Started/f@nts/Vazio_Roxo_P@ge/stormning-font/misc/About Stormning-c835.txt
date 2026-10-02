@@ -1,0 +1,11 @@
+﻿Stormning is a Runic font with Nordic runes from 4 Scandinavian alphabetic systems and 1 Scandinavian Numeral system that are used as equivalents to Latin Characters.
+
+Most Characters are from the ancient norse Elder Futhark and later norse Younger Futhark runic alphabets, the other runes are from the later Medieval and Swedish Dalecarlian Runic alphabets.
+
+The Numbers are the Norse Pentamal Numeric system, which works a lot like the Roman Numeral System.
+
+There is almost no punctuation, as the Runes only had very limited punctuation.
+
+The symbols that look like centered dots and Maltese Cross were both used as equivalents to commas, and the symbol that looks like a colon was used as an equivalent to the Period/Full Stop in the Latin alphabet.
+
+As an equivalent to the at sign (@), the "A" and "T" characters were combined together as a ligature of sorts, but this was not used in the actual Norse alphabets, this was made up for this font as a way to add a minute bit of practicality to it.
