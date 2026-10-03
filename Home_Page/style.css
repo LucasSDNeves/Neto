@@ -31,18 +31,36 @@ body {
 }
 
 .lado-login {
+    position: absolute;
     width: 100%;
     max-width: 440px;
-    background-color: rgba(10, 12, 18, 0.65);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(10, 12, 18, 0.4);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
 
     padding: 40px;
     border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0);
 
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+
+    opacity: 0;
+    pointer-events: auto;
+
+    transition: opacity 0.5s ease, backdrop-filter 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
     
+    /* border: 0px solid #ff02d9; */
+}
+
+.lado-login:hover,
+.lado-login:focus-within {
+    opacity: 1;
+    background-color: rgba(10, 12, 18, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+
     border: 0px solid #ff02d9;
 }
 
@@ -55,6 +73,10 @@ body {
     letter-spacing: 0.5px;
 
     border: 0px solid #ff02d9;
+}
+
+.lado-login:hover h2 {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 .lado-login p {
@@ -138,13 +160,21 @@ button:active {
     border: 0px solid #ff02d9;
 }
 
-@media (max-width: 768px) {
+@media (pointer: coarse) {
     body {
         padding: 15px;
     }
 
     .lado-login {
+        opacity: 0.95;
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        backdrop-filter: blur(15px);
+        background-color: rgba(10, 12, 18, 0.85);
         padding: 30px 20px;
         border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0 ,0, 0.5);
     }
 }
