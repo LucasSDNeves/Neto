@@ -14,26 +14,41 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url('https://i.pinimg.com/originals/cd/ba/b5/cdbab594ae7780cbe2cc57cadfcd0555.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     overflow: hidden;
-    padding: 20px;
+    position: relative;
+    background-color: #05070a;
 
     border: 0px solid #ff02d9;
 }
 
 .container-imagem {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
 
     border: 0px solid #ff02d9;
+}
+
+.lado-imagem {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/cd/ba/b5/cdbab594ae7780cbe2cc57cadfcd0555.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.1);
+    will-change: transform;
 }
 
 .lado-login {
     position: absolute;
     width: 100%;
     max-width: 440px;
+    z-index: 10;
     background-color: rgba(10, 12, 18, 0.4);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
@@ -124,7 +139,7 @@ body {
 .campo-grupo input:focus {
     border-color: #007bff;
     background-color: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 025);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
 
     border: 0px solid #ff02d9;
 }
