@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login LSDN</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-imagem"> <!---->
+        <div class="lado-imagem"></div>
+    </div> <!---->
+
+    <div class="lado-login">
+        <h2>Verificação de Acesso</h2>
+
+        <form action="/login" method="POST">
+            
+            <div class="campo-grupo">
+                <label for="username">Usuário ou ID:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <br>
+
+            <div class="campo-grupo">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <br>
+
+            <button type="submit">Entrar</button>
+
+            <p>Caso você não tenha acesso, fale com o dono para criar um acesso para você.</p>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

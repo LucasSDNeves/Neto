@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+    /* border: 0px solid #ff02d9; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('https://i.pinimg.com/originals/cd/ba/b5/cdbab594ae7780cbe2cc57cadfcd0555.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 20px;
+
+    border: 0px solid #ff02d9;
+}
+
+.container-imagem {
+    display: none;
+
+    border: 0px solid #ff02d9;
+}
+
+.lado-login {
+    width: 100%;
+    max-width: 440px;
+    background-color: rgba(10, 12, 18, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    
+    border: 0px solid #ff02d9;
+}
+
+.lado-login h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    border: 0px solid #ff02d9;
+}
+
+.lado-login p {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #b3b3b3;
+    text-align: center;
+    line-height: 1.5;
+
+    border: 0px solid #ff02d9;
+}
+
+.campo-grupo {
+    margin-bottom: 24px;
+
+    border: 0px solid #ff02d9;
+}
+
+.campo-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 600;
+
+    border: 0px solid #ff02d9;
+}
+
+.campo-grupo input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    transition: all 0.3s ease;
+
+    border: 0px solid #ff02d9;
+}
+
+.campo-grupo input:focus {
+    border-color: #007bff;
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 025);
+
+    border: 0px solid #ff02d9;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0 40px 12px rgba(0, 123, 255, 0.3);
+
+    border: 0px solid #ff02d9;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+
+    border: 0px solid #ff02d9;
+}
+
+button:active {
+    transform: translateY(1px);
+
+    border: 0px solid #ff02d9;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .lado-login {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+}
