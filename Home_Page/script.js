@@ -1,4 +1,4 @@
-/* #region animation-homePage */
+// #region animation-homePage
 const fundo = document.querySelector('.lado-imagem');
 
 let mouseX = 0;
@@ -27,4 +27,31 @@ function animarParallax() {
 }
 
 animarParallax();
-/* #endregion */
+// #endregion
+
+
+// #region Password(PassPort) 
+const usuariosPermitidos = [
+    { username:"LSDN_ADM", senha:"097", nome:"LSDN"},
+];
+
+const formulario = document.querySelector('form');
+
+formulario.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const usuarioDigitado = document.getElementById('username').value.trim();
+    const senhaDigitada = document.getElementById('password').value;
+
+    const usuarioEncontrado = usuariosPermitidos.find(u => 
+        u.username.toLowerCase() === usuarioDigitado.toLowerCase() && u.senha === senhaDigitada
+    );
+
+    if (usuarioEncontrado) {
+        alert(`Acesso Permitido! Bem-Vindo(a), ${usuarioEncontrado.nome}.`);
+        window.location.href = "../Page_Started/N.html";
+    } else {
+        alert("Acesso Negado! Usuário ou senha incorretos, ou você não foi cadastrado pelo dono.");
+    }
+});
+// #endregion
