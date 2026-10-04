@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // #endregion
 
-// #region pre
+// #region previa
 document.addEventListener("DOMContentLoaded" , function () {
     const campoText = document.getElementById('textoNota_purple');
     const campoTitulo = document.getElementById('tituloNota_page_purple');

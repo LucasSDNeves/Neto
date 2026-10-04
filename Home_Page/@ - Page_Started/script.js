@@ -34,7 +34,7 @@ const mensagemErro = document.getElementById('mensagem-erro');
 const SENHA_CORRETA = "KethFagundes";
 
 // (const) Cria uma constante.
-const PAGINA_DESTINO = "My_page/Roxo/index.html";
+const PAGINA_DESTINO = "@ - Others_Page's/Roxo/index.html";
 
 // Cria uma função.
 function abrirPopup(event) {
