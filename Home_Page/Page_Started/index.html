@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=crown" />
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;900&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Yuyu&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">LSDN'<span>eves</span></div>
+        <nav>
+            <a href="#">001 - AZUL</a>
+            <a href="#">002 - VERMELHO</a>
+            <a href="#">- BUILD -</a>
+            <a href="#">- BUILD -</a>
+        </nav>
+
+        <div class="menu-actions">
+            <div class="anel-acabamento">
+                <div class="vala-fina">
+                    <a href="#" class="link-botao" id="btn-abrir-popup">
+                        <button class="botao-afundado">
+                            <span class="material-symbols-outlined">crown</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <button class="btn-menu">+</button>
+        </div>
+        
+        <!-- <button class="btn-menu">+</button> -->
+
+    </header>
+
+    <!-- Seção 01_PRINCIPAL -->
+    <section class="hero scroll-reveal">
+        <div class="hero-content">
+            <span class="subtitle">"INITIAL" // PÁGINA INICIAL</span>
+            <h1>PAGE_STARTED</h1>
+            <p>Página de informações, textuais e visuais sobre o conteúdo existente em todo o site.</p>
+            <a href="#" class="btn-primary">*CONFIRA! <span class="plus">+</span></a>
+        </div>
+    </section>
+
+    <!-- Seção de Estatísticas_PRINCIPAL -->
+    <section class="stats-section scroll-reveal">
+        <div class="section-index">01 // INFORMAÇÕES</div>
+        <h2>DADOS // INFORMAÇÕES SOBRE WIDGET's & APLICAÇÕES DO SITE</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="number">197.121</span>
+                <p>Caracters Escritos até o Momento.</p>
+            </div>
+            <div class="stat-card">
+                <span class="number">10.5%</span>
+                <p>dos textos marcados como concluídos.</p>
+            </div>
+            <div class="stat-card">
+                <span class="number">1.000</span>
+                <p>de textos criados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="split-grid-section scroll-reveal">
+        <div class="section-index">02 // APPLICATIONS</div>
+        <div class="split-grid">
+            <div class="grid-box box-side">
+                <span class="box-tag">// SISTEMA</span>
+                <h3>Módulos de Interface</h3>
+                <p>Componentes Isolados e Otimizados para Renderização de Dados em Tempo Real no Dashborad.</p>
+            </div>
+
+            <div class="grid-box box-center">
+                <span class="box-tag">// NÚCLEO</span>
+                <h2>PRODUÇÃO ATUAL DE CÓDIGO DO PROJETO</h2>
+                <p>O desenvolvimento da arquitetura segue o padrão minimalista de alte perfoma.</p>
+                <a href="#" class="link-arrow">Ver documento +</a>
+            </div>
+
+            <div class="grid-box box-side">
+                <span class="box-tag">// DESIGN</span>
+                <h3>Identidade Mono</h3>
+                <p>Uso de tipografia industrial para a exibição de logs, índices e métricas de sistema.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-relative">
+        <div class="footer-content">
+            <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
+            <span class="version">// V0.0.1_BUILD</span>
+        </div>
+    </footer>
+
+    <div id="fundo-popup" class="fundo-modal">
+        <div class="conteudo-modal">
+            <button id="btn-fechar-popup" class="botao-fechar">&times;</button>
+            <h3>🔒 - Acesso Restrito</h3>
+            <p>Senha necessária para prosseguir.</p>
+
+            <form id="formulario-senha">
+                <div class="grupo-campo">
+                    <label for="campo-senha">Senha:</label>
+                    <input type="password" id="campo-senha" placeholder="Código" required
+                        oninvalid="this.setCustomValidity('Eiiii! Você esqueceu de digitar a senha! 😉')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+                <button type="sgubmit" class="botao-enviar">Confirmar</button>
+            </form>
+            <p id="mensagem-erro" class="texto-erro"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
