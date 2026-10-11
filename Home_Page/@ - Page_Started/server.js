@@ -11,7 +11,7 @@ app.post('/api/verificar-senha', (req, res) => {
     const { senhaDigitada } = req.body;
 
     if (senhaDigitada === process.env.SENHA_MESTRE) {
-        return res.json({ valido: true, destino: "../@ - Page_Started/@ - Others_Page's/Roxo/index.html" });
+        return res.json({ valido: true, destino: "../@ - Others_Page's/Roxo/index.html" });
     } else {
         return res.status(401).json({ valido: false, mensagem: "Senha incorreta! Tente novamente." });
     }
