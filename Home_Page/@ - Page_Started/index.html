@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- #region NavBar -->
     <header class="navbar">
         <div class="logo">LSDN'<span>eves</span></div>
         <nav>
@@ -41,7 +42,30 @@
         <!-- <button class="btn-menu">+</button> -->
 
     </header>
+    <!-- #endregion -->
 
+    <!-- #region PassWord -->
+    <div id="fundo-popup" class="fundo-modal">
+        <div class="conteudo-modal">
+            <button id="btn-fechar-popup" class="botao-fechar">&times;</button>
+            <h3>🔒 - Acesso Restrito</h3>
+            <p>Senha necessária para prosseguir.</p>
+
+            <form id="formulario-senha">
+                <div class="grupo-campo">
+                    <label for="campo-senha">Senha:</label>
+                    <input type="password" id="campo-senha" placeholder="Código" required
+                        oninvalid="this.setCustomValidity('Eiiii! Você esqueceu de digitar a senha! 😉')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+                <button type="sgubmit" class="botao-enviar">Confirmar</button>
+            </form>
+            <p id="mensagem-erro" class="texto-erro"></p>
+        </div>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region Hero_Principal_01 -->
     <!-- Seção 01_PRINCIPAL -->
     <section class="hero scroll-reveal">
         <div class="hero-content">
@@ -51,7 +75,9 @@
             <a href="#" class="btn-primary">*CONFIRA! <span class="plus">+</span></a>
         </div>
     </section>
+    <!-- #endregion -->
 
+    <!-- #region Statics -->
     <!-- Seção de Estatísticas_PRINCIPAL -->
     <section class="stats-section scroll-reveal">
         <div class="section-index">01 // INFORMAÇÕES</div>
@@ -71,7 +97,9 @@
             </div>
         </div>
     </section>
+    <!-- #endregion  -->
 
+    <!-- #region Section_02 -->
     <section class="split-grid-section scroll-reveal">
         <div class="section-index">02 // APPLICATIONS</div>
         <div class="split-grid">
@@ -95,32 +123,16 @@
             </div>
         </div>
     </section>
+    <!-- #endregion -->
 
+    <!-- #region Footer -->
     <footer class="footer-relative">
         <div class="footer-content">
             <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
             <span class="version">// V0.0.1_BUILD</span>
         </div>
     </footer>
-
-    <div id="fundo-popup" class="fundo-modal">
-        <div class="conteudo-modal">
-            <button id="btn-fechar-popup" class="botao-fechar">&times;</button>
-            <h3>🔒 - Acesso Restrito</h3>
-            <p>Senha necessária para prosseguir.</p>
-
-            <form id="formulario-senha">
-                <div class="grupo-campo">
-                    <label for="campo-senha">Senha:</label>
-                    <input type="password" id="campo-senha" placeholder="Código" required
-                        oninvalid="this.setCustomValidity('Eiiii! Você esqueceu de digitar a senha! 😉')"
-                        oninput="this.setCustomValidity('')">
-                </div>
-                <button type="sgubmit" class="botao-enviar">Confirmar</button>
-            </form>
-            <p id="mensagem-erro" class="texto-erro"></p>
-        </div>
-    </div>
+    <!-- #endregion -->
 
     <script src="script.js"></script>
 </body>
