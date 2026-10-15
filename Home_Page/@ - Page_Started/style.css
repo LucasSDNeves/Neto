@@ -62,6 +62,20 @@ body {
 }
 /* #endregion */
 
+/* #region Fade in-Scroll (Efeito de Subida) */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s var(--curva-industrial),
+                transform 1s var(--curva-industrial);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* #endregion */
+
 /* #region NavBar */
 .navbar {
     display: flex;
@@ -111,7 +125,9 @@ body {
 
     border: 0px solid #ff0090;
 }
+/* #endregion */
 
+/* #region Botão-Menu */
 .btn-menu {
     background: none;
     border: 1px solid var(--borda-escura) !important;
@@ -130,8 +146,9 @@ body {
     
     border: 0px solid #ff0090;
 }
+/* #endregion */
 
-/* Seção Principal-Central */
+/* #region Seção Principal-Central */
 .hero {
     height: 100vh;
     display: flex;
@@ -185,6 +202,7 @@ body {
     top: 120px;
 }
 
+/* #region botão no principal */
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -197,7 +215,7 @@ body {
     letter-spacing: 2px;
     transition: var(--transicao-suave);
 
-    border: 1px solid #ff0090;
+    border: 0px solid #ff0090;
 }
 
 .btn-primary:hover {
@@ -205,7 +223,7 @@ body {
     background-color: var(--texto-principal);
     color: var(--fundo-principal);
 
-    border: 1px solid #ff0090;
+    border: 0px solid #ff0090;
 }
 
 .btn-primary .plus {
@@ -213,12 +231,16 @@ body {
 
     border: 0px solid #ff0090;
 }
+/* #endregion */
+/* #endregion */
 
-/* Seção Estatísticas (Cards) */
+/* #region Seção Estatísticas (Cards) */
 .stats-section {
     position: relative;
     padding: var(--padding-secao);
     border-top: 1px solid var(--borda-sutil) !important;
+
+    background: radial-gradient(circle at 50% 50%, rgba(0, 255, 204, 0.02) 0%, var(--fundo-principal) 70%);
 
     border: 0px solid #ff0090;
 }
@@ -247,6 +269,12 @@ body {
     border: 0px solid #ff0090;
 }
 
+.stat-card:hover {
+    border-top-color: var(--neon-ciano) !important;
+
+    border: 0px solid #ff0090;
+}
+
 .stat-card .number {
     font-family: var(--font-industrial);
     font-size: 4rem;
@@ -265,8 +293,9 @@ body {
 
     border: 0px solid #ff0090;
 }
+/* #endregion */
 
-/* Novo-Grid (Abaixo) */
+/* #region Grid-Card's */
 .section-index {
     position: absolute;
     top: 50px;
@@ -443,20 +472,6 @@ body {
     color: var(--neon-ciano);
 
     border: 0px solid #ff0090;
-}
-/* #endregion */
-
-/* #region Fade in-Scroll (Efeito de Subida) */
-.scroll-reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s var(--curva-industrial),
-                transform 1s var(--curva-industrial);
-}
-
-.scroll-reveal.active {
-    opacity: 1;
-    transform: translateY(0);
 }
 /* #endregion */
 

@@ -45,13 +45,15 @@
 }
 
 .mural_section{
+    position: relative;
     width: 100%;
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: var(--padding-secao);
-    background-color: var(--fundo-principal);
+    background-color: #030303;
+    border-top: 1px solid var(--borda-sutil) !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 
@@ -177,7 +179,7 @@
     height: 170px;
     padding: 20px;
     position: relative;
-    border-radius: 0px 8px 0px 8px;
+    border-radius: 0px;
     /* Talvez mudar, já que são post-it's. */
     box-sizing: border-box;
     display: flex;
@@ -187,6 +189,11 @@
     
     border: 0px solid #ff00ee;
 }
+
+.mural_board_container .mural_note_purple { transform: rotate(-0.5deg); }
+.mural_board_container .mural_note:nth-child(2) { transform: rotate(1deg); }
+.mural_board_container .mural_note:nth-child(3) { transform: rotate(-1deg); }
+
 
 .note_pin {
     width: 6px;
@@ -261,9 +268,11 @@
 
 
 .mural_note_purple:hover, .mural_note:hover {
-    transform: translateY(-4px);
-    border-color: var(--texto-principal) !important;
-    background: rgba(255, 255, 255, 0.03);
+    transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
+    border-color: var(--neon-ciano) !important;
+    background: var(--fundo-card);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 5;
 
     border: 0px solid #ff00ee;
 }
