@@ -1,0 +1,321 @@
+:root {
+    /* Paleta de Cores de Fundo */
+    --fundo-principal: #050505;
+    --fundo-card: #0d0f11;
+    --fundo-input: #111111;
+    --fundo-input-erro: #1a0d0f;
+
+    /* Paleta de Texto */
+    --texto-principal: #ffffff;
+    --texto-suporte: #aaaaaa;
+    --texto-links: #888888;
+    --texto-mutado: #666666;
+    --texto-escuro: #444444;
+
+    /* Cores de Alerta e Efeitos Neon */
+    --neon-ciano: #00ffcc;
+    --neon-erro: #ff3366;
+
+    /* Brilhos Neon (Shadows) */
+    --brilho-ciano: 0 0 10px rgba(0, 255, 204, 0.2);
+    --brilho-erro: 0 0 10px rgba(255, 52, 102, 0.15);
+
+    /* Efeitos de Vidro (Glassmorphism */
+    --fundo-vidro: rgba(5, 5, 5, 0.75);
+    --desfoque-vidro: blur(10px);
+
+    /* Bordas & Divisores */
+    --borda-sutil: #111111;
+    --borda-cinza: #222222;
+    --borda-escura: #333333;
+    --borda-card: rgba(0, 255, 204, 0.2);
+    
+    /* Tipografia Industrial */
+    --font-principal: 'Inter', sans-serif;
+    --font-industrial: 'Space Mono', monospace;
+    --font-destaque: 'Black Ops One', system-ui;
+
+    /* Animações e Transições */
+    --transicao-suave: 0.3s ease;
+    --transicao-rapida: 0.15s ease;
+    --curva-industrial: cubic-bezier(0.25, 1, 0.5, 1);
+
+    /* Layout & Estrutura */
+    --padding-secao: 140px 10% 100px 10%;
+}
+
+.mural_section{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-secao);
+    background-color: var(--fundo-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+    border: 0px solid #ff00ee;
+}
+
+.mural_asymmetric_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+
+    border: 0px solid #ff00ee;
+}
+
+.mural_board_container {
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--borda-sutil) !important;
+    padding: 25px;
+    box-shadow: var(--brilho-ciano);
+    box-sizing: border-box;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_text.side_wrapper {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: left;    
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_header_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_header_top .mural_tag {
+    font-family: var(--font-industrial);
+    font-size: 0.85rem;
+    color: var(--neon-ciano);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_header_top .mural_big_title {
+    font-family: var(--font-destaque);
+    font-style: oblique;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.1;
+    color: var(--texto-principal);
+    margin: 0;
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_header_top .mural_big_title strong {
+    color: var(--neon-ciano);
+    font-weight: inherit;
+    -webkit-text-fill-color: initial;
+    background: none;
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_footer_botton {
+    padding: 0;
+    margin: 0;
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_footer_botton .mural_description {
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    color: var(--texto-suporte);
+    line-height: 1.6;
+    margin: 0;
+    
+    border: 0px solid #ff00ee;
+}
+
+/* Código existente no código original e mudado em mudanças/passoas futuros. */
+/* .mural_note {
+    height: 170px;
+    padding: 16px;
+    position: relative;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 
+        0px 10px 15px -5px rgba(0, 0, 0, 0.15),
+        inset -3px -3px -5px rgba(0, 0, 0, 0.08),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.15);
+    
+    
+    border: 1px solid #ff00ee !important;
+} */
+
+.mural_note_purple, .mural_note {
+    height: 170px;
+    padding: 20px;
+    position: relative;
+    border-radius: 0px 8px 0px 8px;
+    /* Talvez mudar, já que são post-it's. */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: all var(--transicao-suave);
+    
+    border: 0px solid #ff00ee;
+}
+
+.note_pin {
+    width: 6px;
+    height: 6px;
+    background: var(--neon-ciano);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: var(--brilho-ciano);
+
+    border: 0px solid #ff00ee;
+}
+
+.note_header_bar {
+    width: 100%;
+    border-bottom: 1px solid var(--borda-sutil) !important;
+    padding-bottom: 6px;
+    
+    border: 0px solid #ff00ee;
+}
+
+.note_index {
+    font-family: var(--font-industrial);
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border: 0px solid #ff00ee;
+}
+
+.note_text {
+    font-family: var(--font-principal);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    
+    border: 0px solid #ff00ee;
+}
+
+/* Murais */
+/* Neon */
+.mural_note_purple{
+    background: rgba(0, 255, 204, 0.03);
+    border: 1px solid rgba(0, 255, 204, 0.3) !important;
+    
+    border: 0px solid #ff00ee;
+}
+.mural_note_purple .note_index { color: var(--neon-ciano) ;border: 0px solid #ff00ee; }
+.mural_note_purple .note_text { color: var(--texto-principal) ;border: 0px solid #ff00ee; }
+
+/* Dark Nota */
+.note_dark {
+    background: var(--fundo-card);
+    border: 1px solid var(--borda-escura) !important;
+
+    border: 0px solid #ff00ee;
+}
+.note_dark .note_index { color: var(--texto-links); border: 0px solid #ff00ee; }
+.note_dark .note_text { color: var(--texto-suporte); border: 0px solid #ff00ee; }
+.note_dark .note_pin { background: var(--texto-escuro); box-shadow: none; border: 0px solid #ff00ee; }
+
+/* Gray Note */
+.note_gray {
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid var(--borda-sutil) !important;
+}
+
+.note_gray .note_index { color:var(--texto-mutado); border: 0px solid #ff00ee; }
+.note_gray .note_text { color: var(--texto-suporte); border: 0px solid #ff00ee; }
+.note_gray .note_pin { background: var(--texto-escuro); box-shadow: none; border: 0px solid #ff00ee; }
+
+
+.mural_note_purple:hover, .mural_note:hover {
+    transform: translateY(-4px);
+    border-color: var(--texto-principal) !important;
+    background: rgba(255, 255, 255, 0.03);
+
+    border: 0px solid #ff00ee;
+}
+
+.note_shadow_slot_blank {
+    height: 170px;
+    background-color: transparent;
+    border-radius: 0px 8px 0px 8px;
+    border: 1px dashed var(--borda-escura) !important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: not-allowed;
+    transition: var(--transicao-suave);
+
+    border: 0px solid #ff00ee;
+}
+
+.slot_plus_icon {
+    font-size: 1.3rem;
+    color: var(--texto-escuro);
+
+    border: 0px solid #ff00ee;
+}
+
+.slot_blank_text {
+    font-family: var(--font-industrial);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--texto-mutado);
+    letter-spacing: 1px;
+
+    border: 0px solid #ff00ee;
+}
+
+.note_shadow_slot_blank:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+    border-color: var(--texto-mutado) !important;
+
+    border: 0px solid #ff00ee;
+}
+
+@media (max-width: 968px) {
+    .mural_asymmetric_container { flex-direction: column-reverse; gap: 35px; border: 0px solid #ff00ee; }
+    .mural_board_container { width: 100%; border: 0px solid #ff00ee; }
+    .mural_text_side_wrapper { width: 100%; align-items: center; text-align: center; border: 0px solid #ff00ee; }
+    .mural_header_top { align-items: center; text-align: center; border: 0px solid #ff00ee; }
+}
+
+@media (max-width: 600px ) {
+    .mural_board_container { grid-template-columns: 1fr; border: 0px solid #ff00ee; }
+}
