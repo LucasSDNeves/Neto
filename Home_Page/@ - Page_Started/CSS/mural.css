@@ -81,8 +81,34 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
+    height: auto;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 15px;
     
     border: 0px solid #ff00ee;
+}
+
+.mural_board_container::-webkit-scrollbar {
+    width: 4px;
+
+    border: 0px solid #ff00ee;
+}
+
+.mural_board_container::-webkit-scrollbar-thumb {
+    background: var(--borda-escura);
+    border-radius: 2px;
+    transition: var(--transicao-suave);
+
+    border: 0px solid #ff00ee;
+}
+
+.mural_board_container::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-ciano);
+
+    border: 0px solid #ff00ee !important;
 }
 
 .mural_text.side_wrapper {
@@ -213,7 +239,53 @@
     width: 100%;
     border-bottom: 1px solid var(--borda-sutil) !important;
     padding-bottom: 6px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+    border: 0px solid #ff00ee;
+}
+
+.note_date {
+    font-family: var(--font-industrial);
+    font-size: 0.65rem;
+    color: var(--texto-mutado);
+    letter-spacing: 0.5px;
+
+    border: 0px solid #ff00ee;
+}
+
+.mural_note_purple .note_date {
+    color: rgba(0, 255, 204, 0.5);
+
+    border: 0px solid #ff00ee;
+}
+
+.note_author {
+    font-family: var(--font-industrial);
+    font-size: 0.65rem;
+    color: var(--texto-mutado);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    
+    margin-top: auto;
+    align-self: flex-end;
+    
+    transition: var(--transicao-suave);
+
+    border: 0px solid #ff00ee;
+}
+
+.mural_note_purple:hover .note_author {
+    color: var(--neon-ciano);
+    
+    border: 0px solid #ff00ee;
+}
+
+.mural_note:hover .note_author {
+    color: var(--texto-principal);
+
     border: 0px solid #ff00ee;
 }
 
@@ -328,3 +400,53 @@
 @media (max-width: 600px ) {
     .mural_board_container { grid-template-columns: 1fr; border: 0px solid #ff00ee; }
 }
+
+/* CARD de TESTE */
+
+.note_black {
+    background: #020202;
+    border: 1px solid var(--borda-sutil) !important;
+}
+.note_black .note_index { color: var(--neon-ciano); }
+.note_black .note_text { color: var(--texto-principal); }
+.note_black .note_pin { background: var(--neon-ciano); box-shadow: var(--brilho-ciano); }
+
+.note_red {
+    background: rgba(255, 51, 102, 0.03) ;
+    border: 1px solid rgba(255, 51, 102, 0.25) !important;
+}
+
+.note_red .note_index { color: var(--neon-erro); }
+.note_red .note_text { color: var(--texto-principal); }
+.note_red .note_date { color: rgba(255, 51, 102, 0.5); }
+.note_red .note_pin { background: var(--neon-erro); box-shadow: var(--brilho-erro); }
+
+.note_blue {
+    background: rgba(0, 102, 255, 0.04);
+    border: 1px solid rgba(0, 102, 255, 0.25) !important;
+}
+.note_blue .note_index { color: #0066ff; }
+.note_blue .note_text { color: var(--texto-principal); }
+.note_blue .note_date { color: rgba(0, 102, 255, 0.5); }
+.note_blue .note_pin { background: #0066ff; box-shadow: 0 0 10px rgba(0, 102, 255, 0.3); }
+
+.note_white {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+.note_blue .note_index { color: var(--texto-principal); }
+.note_blue .note_text { color: var(--texto-suporte); }
+.note_blue .note_date { color: var(--texto-mutado); }
+.note_blue .note_pin { background: var(--texto-principal); box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); }
+
+.mural_note:hover {
+    transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
+    background: var(--fundo-card);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.note_black:hover { border-color: var(--neon-ciano) !important; }
+.note_red:hover { border-color: var(--neon-erro) !important; }
+.note_blue:hover { border-color: #0066ff !important; }
+.note_white:hover { border-color: var(--texto-principal) !important; }
