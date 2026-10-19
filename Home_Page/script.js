@@ -38,12 +38,23 @@ const btnIrParaCadastro = document.getElementById('btnIrParaCadastro');
 const btnIrParaSolicitacao = document.getElementById('btnIrParaSolicitacao');
 const botoesVoltarLogin = document.querySelectorAll('.btnVoltarLogin');
 
+const imagensDeFundo = {
+    'loginCard': 'https://i.pinimg.com/originals/cd/ba/b5/cdbab594ae7780cbe2cc57cadfcd0555.png',
+    'cadastroCard': '',
+    'solicitacaoCard': 'https://i.pinimg.com/originals/f9/ca/f9/f9caf93cad63d9bf30546210a3c3f323.gif'
+};
+
 function alternarCard(cardParaMostrar) {
     loginCard.classList.add('card-oculto');
     cadastroCard.classList.add('card-oculto');
     solicitacaoCard.classList.add('card-oculto');
 
     cardParaMostrar.classList.remove('card-oculto');
+
+    const idDoCard = cardParaMostrar.id;
+    if (imagensDeFundo[idDoCard] && fundo) {
+        fundo.style.backgroundImage =  'url("' + imagensDeFundo[idDoCard] + '")';
+    }
 }
 
 btnIrParaCadastro.addEventListener('click', (e) => {
