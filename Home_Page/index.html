@@ -11,32 +11,65 @@
 </head>
 
 <body>
-    <div class="container-imagem"> <!---->
+    <div class="container-imagem">
         <div class="lado-imagem"></div>
-    </div> <!---->
+    </div>
 
-    <div class="lado-login" id="loginCard">
+    <div class="lado-login card-ativo" id="loginCard">
         <h2>Verificação de Acesso</h2>
-
-        <form action="/login" method="POST">
-            
+        <form id="formLogin" action="/login" method="POST">
             <div class="campo-grupo">
                 <label for="username">Usuário ou ID:</label>
                 <input type="text" id="username" name="username" required>
             </div>
-
-            <br>
-
             <div class="campo-grupo">
                 <label for="password">Senha:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" required>
             </div>
-
-            <br>
 
             <button type="submit">Entrar</button>
 
+            <br><br>
+
             <p>Caso você não tenha acesso, fale com o dono para criar um acesso para você.</p>
+            <p>Não tem uma conta? <a href="#" id="btnIrParaCadastro">Cadastre-se aqui</a></p>
+            <p>Precisa de permissão especial? <a href="#" id="btnIrParaSolicitacao">Enviar mensagem ao Admin</a></p>
+        </form>
+    </div>
+
+    <div class="lado-login card-oculto" id="cadastroCard">
+        <h2>Criar Conta</h2>
+        <form id="formCadastro">
+            <div class="campo-grupo">
+                <label for="newUsername">Escolha um Usuário ou ID:</label>
+                <input type="text" id="newUsername" required>
+            </div>
+            <div class="campo-grupo">
+                <label for="newName">Seu Nome:</label>
+                <input type="text" id="newName" required>
+            </div>
+            <div class="campo-grupo">
+                <label for="newPassword">Escolha uma Senha:</label>
+                <input type="password" id="newPassword" required>
+            </div>
+            <button type="submit">Finalizar Cadastro</button>
+            <p>Já tem uma conta? <a href="#" class="btnVoltarLogin">Voltar para o Login</a></p>
+        </form>
+    </div>
+
+    <div class="lado-login card-oculto" id="solicitacaoCard">
+        <h2>Solicitar Acesso</h2>
+        <form id="formSolicitacao">
+            <div class="campo-grupo">
+                <label for="solicitacaoNome">Seu Nome/ Identificação:</label>
+                <input type="text" id="solicitacaoNome" required>
+            </div>
+            <div class="campo-grupo">
+                <label for="solicitacaoMotivo">Mensagem para o Admin (Por que você precisa de acesso?):</label>
+                <textarea id="solicitacaoMotivo" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit">Enviar Solicitação</button>
+            <p><a href="#" class="btnVoltarLogin">Voltar para o Login</a></p>
         </form>
     </div>
     
