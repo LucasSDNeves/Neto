@@ -293,6 +293,91 @@ body {
 
     border: 0px solid #ff0090;
 }
+
+.stats-tabs-nav {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--borda-cinza) !important;
+    padding-bottom: 10px;
+    
+    border: 0px solid #ff0090;
+}
+
+.tab-btn {
+    background: none;
+    border: none !important;
+    color: var(--texto-links);
+    font-family: var(--font-industrial);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: color var(--transicao-suave);
+    position: relative;
+    
+    border: 0px solid #ff0090;
+}
+
+.tab-btn:hover {
+    color: var(--texto-principal);
+    
+    border: 0px solid #ff0090;
+}
+.tab-btn.active {
+    color: var(--neon-ciano);
+    font-weight: bold;
+    
+    border: 0px solid #ff0090;
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--neon-ciano);
+    box-shadow: var(--brilho-ciano);
+    
+    border: 0px solid #ff0090;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-bottom: 40px;
+    
+    border: 0px solid #ff0090;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+    
+    border: 0px solid #ff0090;
+}
+
+.stat-card .number.small {
+    font-family: var(--font-industrial);
+    font-size: 1.8rem;
+    font-weight: 900;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--texto-principal);
+    white-space: nowrap;
+    
+    border: 0px solid #ff0090;
+}
+
+@media (max-width: 768px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px;
+    }
+}
 /* #endregion */
 
 /* #region Grid-Card's */
