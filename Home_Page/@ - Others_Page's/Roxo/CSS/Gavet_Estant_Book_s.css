@@ -1,0 +1,516 @@
+
+/* #region Gaveta e Estante */
+/* ===== ----- Plano de Fundo  ----- ===== */
+.shelf_section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 55px;
+    background-color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_global_wrapper {
+    width: 100%;
+    max-width: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    transform: scale(0.9);
+    transform-origin: center top;
+
+    border: 0px solid #ff009d;
+}
+
+/* ===== ------ Formatação Texto ----- ===== */
+.shelf_header_top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_header_top .section_tag {
+    font-size: 0.85rem;
+    font-weight: 900;
+    color: #9a06be;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_header_top .shelf_big_title {
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    line-height: 1;
+    color: #111;
+    margin: 0;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_header_top .shelf_big_title strong {
+    background-image: linear-gradient(45deg, #9a06be, #cf02c5);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_footer_bottom {
+    text-align: center;
+    max-width: 650px;
+    padding: 0 20px;
+    margin-top: 10px;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_footer_bottom .shelf_description {
+    font-size: 1.15rem;
+    color: #444;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: -0.2px;
+
+    border: 0px solid #ff009d;
+}
+
+/* ===== ----- Estante ----- ====== */
+.hybrid_bookcase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    border: 0px solid #ff009d;
+}
+
+.single_large_bookcase {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 12px solid #ffffff !important;
+    box-shadow: 
+        0px 25px 50px -15px rgba(0, 0, 0, 0.15),
+        inset 0px 4px 12px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_content_area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 3px;
+    height: 158px;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    border: 0px solid #ff009d;
+}
+
+.single_large_bookcase .shelf_content_area {
+    background-image: none !important;
+    background-color: #bebebe !important;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.12) !important;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+    border: 0px solid #ff009d;
+}
+
+.internal_divider_plank {
+    width: 100%;
+    height: 12px;
+    background-color: #ffffff !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    margin: 0;
+
+    border: 0px solid #ff009d;
+}
+
+/* ===== ------ Prateleira ------ ====== */
+
+.shelf_row_open {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_row_open_short {
+    width: calc(100% - 100px);
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_row_open .shelf_content_area {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 15px;
+    margin-bottom: -4px;
+
+    border: 0px solid #ff009d;
+}
+
+.furniture_plank_with_legs {
+    position: relative;
+    width: 100%;
+    height: 14px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #e2e8f0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+
+    border: 0px solid #ff009d;
+}
+
+.shelf_leg {
+    position: absolute;
+    top: 14px;
+    width: 12px;
+    height: 35px;
+    background-color: #ffffff;
+    border-left: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 3px solid #cbd5e1;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+
+    border: 0px solid #ff009d;
+}
+
+.leg_left {
+    left: 40px;
+
+    border: 0px solid #ff009d;
+}
+
+.leg_right {
+    right: 40px;
+
+    border: 0px solid #ff009d;
+}
+
+
+/* Gavetas */
+.dresser_bottom_furniture {
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 6px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    border: 0px solid #ff009d;
+}
+
+.dresser_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    background-color: #c7cdd6;
+
+    border: 0px solid #ff009d;
+}
+
+.dresser_grid_eight {
+    display: grid !important;
+    grid-template-columns: repeat(8, 1fr) !important;
+    gap: 6px;
+    background-color: #c7cdd6;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_slot {
+    background-color: #ffffff;
+    padding: 1px 1px;
+    border: 1px solid #d4dae3;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.05);
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_button {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    height: 78px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s;
+    box-shadow: 0px 20px 4px rgba(0, 0, 0, 0.03);
+
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.2s;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_button.drawer_btn_small {
+    height: 44px;
+    padding: 4px 0;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_handle_horizontal {
+    width: 55px;
+    height: 7px;
+    background: linear-gradient(180deg, #f3f3f3, #c8ccd3);
+    border-radius: 4px !important;
+    border: 1px solid #a4afb8 !important;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 1px #ffffff;
+    margin-bottom: 7px;
+    transition: all 0.15s ease;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_handle_horizontal.handle_small {
+    width: 32px;
+    height: 5px;
+    margin-bottom: 3px;
+
+    border: 0px solid #ff009d;
+}
+
+/* Textos e Ícones */
+.drawer_label {
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: 55637a;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_label span {
+    color: #9a06be;
+    margin-right: 3px;
+    font-family: monospace;
+    font-size: 0.9rem;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_label.label_small {
+    font-size: 0.75rem;
+    letter-spacing: 0px;
+    color: #718096;
+
+    border: 0px solid #ff009d;
+}
+
+/* Botão(Gaveta) */
+.drawer_button:hover {
+    background-color: #f9fbfd;
+    transform: translateY(4px);
+    box-shadow: 
+        inset 0px 6px 10px rgba(0, 0, 0, 0.15),
+        0px -4px 10px rgba(0, 0, 0, 0.05);
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_button:hover .drawer_handle_horizontal {
+    background: linear-gradient(180deg, #ffffff, #a3a9b5);
+    transform: scaleX(1.05);
+    border-color: #9a06b3 !important;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_button:hover .drawer_label {
+    color: #111;
+
+    border: 0px solid #ff009d;
+}
+
+.drawer_button:active {
+    background-color: #f1f3f5;
+
+    border: 0px solid #ff009d;
+}
+
+.bookcase_legs_container {
+    position: absolute;
+    bottom: -37px;
+    left: -12px;
+    width: calc(100% + 24px);
+    height: 25px;
+    pointer-events: none;
+
+    border: 0px solid #ff009d;
+}
+
+.main_leg {
+    position: absolute;
+    width: 16px;
+    height: 25px;
+    background-color: #ffffff;
+    border-left: 1px solid #e2e8f0 !important;
+    border-right: 1px solid #e2e8f0 !important;
+    border-bottom: 3px solid #cbd5e1 !important;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.06);
+
+    border: 0px solid #ff009d;
+}
+
+.leg_bottom_left {
+    left: 45px;
+
+    border: 0px solid #ff009d;
+}
+
+.leg_bottom_right {
+    right: 45px;
+
+    border: 0px solid #ff009d;
+}
+
+/* Layout Livros */
+
+.book_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 14px 6px;
+    border-radius: 3px 3px 0 0;
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    box-sizing: border-box;
+    box-shadow: inset -3px 0px 4px rgba(0, 0, 0, 0.18), 2px 0px 3px rgba(0, 0, 0, 0.1);
+    width: 42px;
+    height: 150px;
+
+    border: 0px solid #ff009d;
+}
+
+.book_title {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    border: 0px solid #ff009d;
+}
+
+.book_icon {
+    font-size: 0.9rem;
+    margin-top: auto;
+
+    border: 0px solid #ff009d;
+}
+
+.book_purple {
+    background: linear-gradient(to right, #9a06be, #780294);
+    color: #ffffff;
+
+    border: 0px solid #ff009d;
+}
+
+.book_dark {
+    background: linear-gradient(to right, #414a5c, #262c38);
+    color: #cbd5e1;
+
+    border: 0px solid #ff009d;
+}
+
+.book_gray {
+    background: linear-gradient(to right, #f1f5f9, #cbd5e1);
+    color: #475569;
+
+    border: 0px solid #ff009d;
+}
+
+/* Botões (Livro) */
+.book_btn:hover {
+    transform: translateY(-12px) rotate(-3deg);
+    box-shadow: 
+        -5px 15px 20px rgba(0, 0, 0, 0.3),
+        inset -2px 0px 4px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+
+    border: 0px solid #ff009d;
+}
+
+.book_shadow_slot {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 3px 3px 0 0;
+    box-sizing: border-box;
+    cursor: not-allowed;
+    transition: background-color 0.2s;
+    width: 42px;
+    height: 150px;
+    border: none !important;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.15) !important;
+
+    border: 0px solid #ff009d;
+}
+
+@media (max-width: 968px) {
+    .shelf_header_top .shelf_big_title {
+        font-size: 2.4rem;
+    }
+
+    .shelf_action {
+        padding: 40px 20px;
+    }
+
+    .shelf_row_open_short {
+        width: 100%;
+    }
+
+    .shelf_leg,
+    .bookcase_legs_container {
+        display: none;
+    }
+
+    .single_large_bookcase {
+        margin-bottom: 0px;
+    }
+
+    .dresser_grid_right {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 6px;
+    }
+}
+/* #endregion */
