@@ -1,0 +1,125 @@
+
+.hero_section {
+    width: 100%;
+    min-height: 461px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_container {
+    max-width: 800px;
+    text-align: center;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_subtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    color: #333;
+    margin-bottom: 10px;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_subtitle span {
+    color: #9a06be;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+    line-height: 0.95;
+    color: #111;
+    margin-bottom: 20px;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_title strong {
+    background-image: linear-gradient(45deg, #9a06be, #cf02c5);
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_lead {
+    font-size: 1.15rem;
+    color: #555;
+    font-weight: 500;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+
+    border: 0px solid #ff00da;
+}
+
+.hero_actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    border: 0px solid #ff00da;
+}
+
+/* Botões */
+.btn_primary,
+.btn_secondary {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+
+    border: 0px solid #ff00da;
+}
+
+.btn_primary {
+    background-color: #9a06be;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(154, 6, 190, 0.3);
+
+    border: 0px solid #ff00da;
+}
+
+.btn_primary:hover {
+    background-color: #cf02c5;
+    transform: translateY(-2px);
+
+    border: 0px solid #ff00da;
+}
+
+.btn_secondary {
+    background-color: #e7e7e7;
+    color: #333;
+    border: 2px solid #c6c9c6dd;
+
+    border: 0px solid #ff00da;
+}
+
+.btn_secondary:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    transform: translateY(-2px);
+
+    border: 0px solid #ff00da;
+}
