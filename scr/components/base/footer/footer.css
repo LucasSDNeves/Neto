@@ -1,0 +1,51 @@
+
+:root {
+    /* --fundo-vidro: rgba(10, 10, 10, 0.45); */
+    --fundo-vidro: rgba(255, 255, 255, 0.07);
+
+    /* --desfoque-vidro: blur(12px) saturate(180%); */
+    --desfoque-vidro: blur(16px) saturate(180%);
+
+    /* --font-industrial: 'Space Mono', monospace; */
+    --font-industrial: 'Space Mono', monospace;
+
+    /* --texto-mutado: #666666; */
+    --texto-mutado: rgba(120, 120, 120, 0.85);
+}
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10%;
+    background: var(--fundo-vidro);
+    backdrop-filter: var(--desfoque-vidro);
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    z-index: 99;
+    font-family: var(--font-industrial);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--texto-mutado);
+
+    border: 0px solid #ff0090;
+}
+
+/* COPY no fim da página */
+.footer-relative {
+    position: relative;
+    width: 100%;
+    padding: 30px 10%;
+    background: var(--fundo-vidro);
+    backdrop-filter: var(--desfoque-vidro);
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--texto-mutado);
+    bottom: -90px;
+
+    border: 0px solid #ff0090;
+    
+    /* Criar dois diferentes, quando ele fica fixed, e quando fica relative. (Talvez na página que for criar de "chave de acesso/ADM.)" */
+}
