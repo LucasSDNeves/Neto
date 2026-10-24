@@ -1,0 +1,9 @@
+{
+    "public": true,
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/Home_Page/$1"
+        }
+    ]
+}
