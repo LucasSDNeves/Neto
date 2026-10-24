@@ -142,3 +142,28 @@ formSolicitacao.addEventListener('submit', function(event) {
     alternarCard(loginCard);
 });
 // #endregion
+
+document.addEventListener('DOMContentLoaded', () => {
+    const btnInformacao = document.getElementById('btnInformacao');
+    const cardCopyright = document.getElementById('cardCopyright');
+    const btnFecharCopyright = document.querySelector('.fechar-copyright');     
+
+    if (btnInformacao && cardCopyright && btnFecharCopyright) {
+        btnInformacao.addEventListener('click', (e) => {
+            e.preventDefault();
+            cardCopyright.classList.add('mostrar');
+    });
+
+    btnFecharCopyright.addEventListener('click', () => {
+        cardCopyright.classList.remove('mostrar');
+    });
+
+    Window.addEventListener('click', (event) => {
+        if (event.target === cardCopyright) {
+            cardCopyright.classList.remove('mostrar');
+        }
+    });
+    }
+});
+
+

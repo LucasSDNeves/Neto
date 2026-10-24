@@ -29,4 +29,10 @@ if (!cssExistente) {
     document.head.appendChild(linkCss);
 }
 
-document.body.insertAdjacentHTML("beforeend", footerTemplate_relative)
+const containerModal = document.getElementById("containerFooterModal");
+
+if (containerModal) {
+    containerModal.innerHTML = footerTemplate_relative;
+} else {
+    document.body.insertAdjacentHTML("beforeend", footerTemplate_relative);
+}
