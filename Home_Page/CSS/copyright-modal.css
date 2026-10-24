@@ -1,0 +1,179 @@
+
+.btn-info {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(10, 12, 18, 0.6);
+    color: var(--texto-claro);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: var(--transicao-suave);
+    margin-top: 0;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.btn-info:hover {
+    background-color: var(--cor-principal);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.modal-copyright {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--modal-fundo-overlay);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    border: 0px solid #ff02d9;
+}
+
+.conteudo-copyright {
+    background-color: var(--card-fundo-modal);
+    backdrop-filter: var(--card-blur-modal);
+    -webkit-backdrop-filter: var(--card-blur-modal);
+    border: 1px solid var(--card-borda-hover) !important;
+    padding: 30px;
+    border-radius: var(--modal-radius);
+    width: 90%;
+    max-width: 400px;
+    color: var(--texto-claro);
+    position: relative;
+    box-shadow: var(--card-sombra-modal);
+    text-align: center;
+    transform: scale(0.9);
+    transition: var(--transicao-suave);
+    
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.conteudo-copyright footer,
+.conteudo-copyright footer * {
+    color: var(--texto-escuro);
+    font-size: 14px;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.conteudo-copyright h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: var(--texto-claro);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.conteudo-copyright p {
+    font-size: 14px;
+    color: var(--texto-escuro);
+    line-height: 1.6;
+    margin-top: 10px;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.fechar-copyright {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: var(--texto-escuro);
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.fechar-copyright:hover {
+    color: var(--cor-erro);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.modal-copyright.mostrar {
+    display: flex;
+    opacity: 1;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.modal-copyright.mostrar .conteudo-copyright {
+    transform: scale(1);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+
+#containerFooterModal {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid var(--card-borda-divisoria);
+    width: 100%;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+#containerFooterModal .footer-relative,
+#containerFooterModal .footer-fixed {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    width: 100% !important;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+#containerFooterModal .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+#containerFooterModal .copyright {
+    color: var(--texto-intermediario) !important;
+    font-size: 13px !important;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+#containerFooterModal .version {
+    color: var(--cor-principal) !important;
+    font-family: var(--fonte-codigo);
+    font-size: 11px !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+
+    border: 0px solid var(--cor-teste-debug);
+}

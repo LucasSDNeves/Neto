@@ -1,0 +1,248 @@
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    position: relative;
+    background-color: var(--cor-background);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.container-imagem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.lado-imagem {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/cd/ba/b5/cdbab594ae7780cbe2cc57cadfcd0555.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transform: scale(1.1);
+    will-change: transform;
+
+    transition: background-image 0.5s ease-in-out;
+}
+
+.lado-login {
+    position: absolute;
+    width: 100%;
+    max-width: var(--card-max-width);
+    z-index: 10;
+    background-color: var(--card-fundo-inicial);
+    backdrop-filter: var(--card-blur-inicial);
+    -webkit-backdrop-filter: var(--card-blur-inicial);
+
+    padding: 40px;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-sombra-inicial);
+
+    border: 1px solid var(--card-borda-inicial) !important;
+
+    opacity: 0;
+    pointer-events: auto;
+
+    transition: var(--transicao-cards);
+
+    /* border: 0px solid var(--cor-teste-debug); */
+}
+
+.lado-login a {
+    color: var(--cor-principal);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transicao-rapida);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.lado-login a:hover {
+    color: var(--cor-principal-hover);
+    text-decoration: underline;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.lado-login:hover,
+.lado-login:focus-within {
+    opacity: 1;
+    background-color: var(--card-fundo-hover);
+    backdrop-filter: var(--card-blur-hover);
+    -webkit-backdrop-filter: var(--card-blur-hover);
+    border: 1px solid var(--card-borda-hover) !important;
+    box-shadow: var(--card-sombra-hover);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.lado-login h2 {
+    margin-bottom: 30px;
+    color: var(--texto-claro);
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.lado-login:hover h2 {
+    text-shadow: 0 0 10px var(--texto-glow-titulo);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.lado-login p {
+    margin-top: 25px;
+    font-size: 13px;
+    color: var(--texto-escuro);
+    text-align: center;
+    line-height: 1.5;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.campo-grupo {
+    margin-bottom: 24px;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.campo-grupo label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--texto-intermediario);
+    font-size: 14px;
+    font-weight: 600;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.campo-grupo textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: var(--input-radius);
+    outline: none;
+    color: var(--texto-claro);
+    background-color: var(--input-fundo);
+    border: 1px solid var(--input-borda);
+    transition: var(--transicao-suave);
+    resize: none;
+    font-family: inherit;
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.campo-grupo textarea:focus {
+    border-color: var(--cor-principal);
+    background-color: var(--input-fundo-focus);
+    box-shadow: 0 0 0 4px var(--cor-principal-glow);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.campo-grupo input {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: var(--input-radius);
+    outline: none;
+
+    color: var(--texto-claro);
+    background-color: var(--input-fundo);
+    border: 1px solid var(--input-borda);
+
+    transition: var(--transicao-suave);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.campo-grupo input:focus {
+    border-color: var(--cor-principal);
+    background-color: var(--input-fundo-focus);
+    box-shadow: 0 0 0 4px var(--cor-principal-glow);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-principal);
+    color: var(--texto-claro);
+    border: none;
+    border-radius: var(--input-radius);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: var(--transicao-rapida);
+    box-shadow: 0 40px 12px var(--cor-principal-shadow);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+button:hover {
+    background-color: var(--cor-principal-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px var(--cor-principal-hover-shadow);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+button:active {
+    transform: translateY(1px);
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+@media (pointer: coarse) {
+    body {
+        padding: 15px;
+    }
+
+    .lado-login {
+        opacity: 0.95;
+        visibility: visible;
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        backdrop-filter: blur(15px);
+        background-color: rgba(10, 12, 18, 0.85);
+        padding: 30px 20px;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.card-ativo {
+    position: absolute;
+    opacity: 0;
+    pointer-events: auto;
+
+
+    border: 0px solid var(--cor-teste-debug);
+}
+
+.card-oculto {
+    display: none !important;
+
+    border: 0px solid var(--cor-teste-debug);
+}

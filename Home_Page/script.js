@@ -143,6 +143,7 @@ formSolicitacao.addEventListener('submit', function(event) {
 });
 // #endregion
 
+// #region Copyright
 document.addEventListener('DOMContentLoaded', () => {
     const btnInformacao = document.getElementById('btnInformacao');
     const cardCopyright = document.getElementById('cardCopyright');
@@ -165,5 +166,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     }
 });
-
-
+// #endregion
