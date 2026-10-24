@@ -1,3 +1,6 @@
+node_modules/
+.env
+
 Home_Page/Page_Started/.env
 Home_Page/Page_Started/node_modules/.package-lock.json
 Home_Page/Page_Started/node_modules/.bin/dotenv
