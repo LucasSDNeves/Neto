@@ -7,29 +7,15 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
-    res.send('🚀 Minha API Node.js está online e conectada ao Neon.tech!');
-});
-
-
 app.post('/api/verificar-senha', (req, res) => {
     const { senhaDigitada } = req.body;
 
     if (senhaDigitada === process.env.SENHA_MESTRE) {
-        return res.json({ valido: true, destino: "neto-pied.vercel.app@ - Other_Page's/Roxo/index.html" });
+        return res.json({ valido: true, destino: "../@ - Others_Page's/Roxo/index.html" });
     } else {
-        return res.status(401).json({ valido: false, mensagem: "Senha incorreta! Tente novamente."});
+        return res.status(401).json({ valido: false, mensagem: "Senha incorreta! Tente novamente." });
     }
 });
-// app.post('/api/verificar-senha', (req, res) => {
-//     const { senhaDigitada } = req.body;
-
-//     if (senhaDigitada === process.env.SENHA_MESTRE) {
-//         return res.json({ valido: true, destino: "../@ - Others_Page's/Roxo/index.html" });
-//     } else {
-//         return res.status(401).json({ valido: false, mensagem: "Senha incorreta! Tente novamente." });
-//     }
-// });
 
 const PORTA = process.env.PORT || 3000;
 app.listen(PORTA, () => {
