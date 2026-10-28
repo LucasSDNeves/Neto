@@ -6,4 +6,4 @@
 <!-- https://neto-wi7l.onrender.com/ -->
 <!-- https://neto-pied.vercel.app/ -->
 
-<!-- <script src="../caminho/do/script/javascript/footer"></script> -->
+<!-- <script src="../caminho/do/script/javascript/footer" data-type="tipoDeFooter"></script> -->

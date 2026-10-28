@@ -1,7 +1,7 @@
 const footerTemplate_relative = `
     <footer class="footer-relative">
         <div class="footer-content">
-            <span class="copyright">ALL RIGHT RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
+            <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
             <span class="version">// V0.0.1_BUILD</span>
         </div>
     </footer>
@@ -29,10 +29,16 @@ if (!cssExistente) {
     document.head.appendChild(linkCss);
 }
 
+const tipoFooter = scriptAtual ? scriptAtual.getAttribute('data-type') : 'relative';
+
+const templateEscolhido = (tipoFooter === 'fixed') ? footerTemplate_fixed : footerTemplate_relative;
+
 const containerModal = document.getElementById("containerFooterModal");
 
 if (containerModal) {
-    containerModal.innerHTML = footerTemplate_relative;
+    containerModal.innerHTML = templateEscolhido;
+} else if (scriptAtual) {
+    scriptAtual.insertAdjacentHTML("beforebegin", templateEscolhido);
 } else {
-    document.body.insertAdjacentHTML("beforeend", footerTemplate_relative);
+    document.body.insertAdjacentHTML("beforrend", footerTemplate_relative);
 }
