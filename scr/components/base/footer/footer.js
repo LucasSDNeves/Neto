@@ -19,14 +19,42 @@ const footerTemplate_fixed = `
 const scriptAtual = document.currentScript;
 const urlDaPasta = scriptAtual ? scriptAtual.src.substring(0, scriptAtual.src.lastIndexOf('/') + 1):'';
 
-const cssExistente = document.querySelector('link[href*="footer.css"]');
+async function verificarArquivosCssExternos() {
+    const links = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+    .map(link => link.href)
+    .filter(href => href && href.startsWith(window.location.origin));
 
-if (!cssExistente) {
-    const linkCss = document.createElement('link');
-    linkCss.rel = 'stylesheet';
-    linkCss.href = urlDaPasta + 'footer.css';
+    for (const url of links) {
+        try {
+            if (url.includes("footer.css")) {
+                return true;
+            }
 
-    document.head.appendChild(linkCss);
+            const resposta = await fetch (url);
+            const textoDoCss = await resposta.text (url);
+
+            if (
+                textoDoCss.includes ('.footer-relative') ||
+                textoDoCss.includes ('.footer-fixed') ||
+                textoDoCss.includes ('footer.css')
+            ) {
+                return true;
+            }
+        } catch (e) {
+        
+        }
+    }
+    return false;
+}
+
+async function rodarFooter() {
+    if (!(await verificarArquivosCssExternos())) {
+        const linkCss = document.createElement('link');
+        linkCss.rel = 'stylesheet';
+        linkCss.href = urlDaPasta + 'footer.css';
+
+        document.head.appendChild(linkCss)
+    }
 }
 
 const tipoFooter = scriptAtual ? scriptAtual.getAttribute('data-type') : 'relative';
@@ -40,5 +68,7 @@ if (containerModal) {
 } else if (scriptAtual) {
     scriptAtual.insertAdjacentHTML("beforebegin", templateEscolhido);
 } else {
-    document.body.insertAdjacentHTML("beforrend", footerTemplate_relative);
+    document.body.insertAdjacentHTML("beforeend", footerTemplate_relative);
 }
+
+rodarFooter();

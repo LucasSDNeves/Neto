@@ -1,3 +1,7 @@
+@import url(CSS/mural.css);
+
+@import url(CSS/footer.css);
+
 /* #region Configs Básicas */
 * {
     margin: 0;
@@ -502,61 +506,6 @@ body {
     .split-grid {
         grid-template-columns: 1fr;
     }
-}
-/* #endregion */
-
-/* #region footer COPYRIGHT (Direitos) */
-/* COPY colada na parte de baixo da tela */
-.footer-fixed {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px 10%;
-    background: var(--fundo-vidro);
-    backdrop-filter: var(--desfoque-vidro);
-    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
-    z-index: 99;
-    font-family: var(--font-industrial);
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--texto-mutado);
-
-    border: 1px solid #ff0090;
-}
-
-/* COPY no fim da página */
-.footer-relative {
-    position: relative;
-    width: 100%;
-    padding: 30px 10%;
-    background: var(--fundo-vidro);
-    backdrop-filter: var(--desfoque-vidro);
-    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
-    font-family: var(--font-industrial);
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--texto-mutado);
-    bottom: -90px;
-
-    border: 0px solid #ff0090;
-    
-    /* Criar dois diferentes, quando ele fica fixed, e quando fica relative. (Talvez na página que for criar de "chave de acesso/ADM.)" */
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    border: 0px solid #ff0090;
-}
-
-.footer-fixed .version,
-.footer-relative .version {
-    color: var(--neon-ciano);
-
-    border: 0px solid #ff0090;
 }
 /* #endregion */
 
