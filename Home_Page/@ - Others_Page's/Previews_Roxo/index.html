@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Ícones. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=undo" />
+
+    <!-- #region (Fonts)-->
+        <!-- fonts (Escolha opcoes cards)-->
+            <!-- (p) Escolha de Card: (Topo)-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+            <!-- Escolhas de opcoes(titulo-data) -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap" rel="stylesheet">
+        <!-- -->
+        
+        <!-- title(nota)-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+        <!-- -->
+
+        <!-- Cript/Fonts-->
+            <!-- (Runicas)-->
+
+            <!-- -->
+        <!-- -->
+    <!-- #endregion (Fonts)-->
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<title>Empty_Purple ©</title>
+
+<body>
+    <div class="title">
+        <h1 class="title_roxo">Roxo</h1>
+        <h3 class="title_vazio">vazio</h3>
+
+        <hr class="linhaBaixo">
+        <hr class="linhaBig">
+        <hr class="linhaSmall">
+
+        <div class="empty_background_big"></div>
+        <div class="empty_background_small"></div>
+        <div class="empty_background_lencol"></div>
+
+        <a href="../../@ - Page_Started/index.html" class="link_back_roxo" id="go_back_purple">
+            <span class="material-symbols-outlined">
+            undo
+            </span>
+        </a>
+    </div>
+
+    <div class="container_blocoNote_purple">
+        <label for="tituloNota_page_purple">Título:</label>
+        <input type="text" id="tituloNota_page_purple" placeholder="Título da Nota">
+        
+        <div class="indicador-aceite-container">
+            <span id="status_aceite_termo" class="status-termo-inativo">❌ Visual ainda não aceito</span>
+
+            <div class="linha-confirmacao-painel">
+                <input type="checkbox" id="checkConfirmacaoPainel">
+
+                <label>° Pular Segurança</label>
+                <label>° Confirmar Visual (Prévia)</label>
+            </div>
+        </div>
+
+        <textarea id="textoNota_purple" placeholder="Bloco de Nota" rows="15" cols="25"></textarea>
+
+        <div class="contador-container">
+            <div class="contador-item">Letras: <span id="cont_caracteres">0</span></div>
+            <div class="contador-item">Palavras: <span id="cont_palavras">0</span></div>
+            <div class="contador-item">Linhas: <span id="cont_linhas">0</span></div>
+            
+            <div class="contador-item">Leitura: <span id="cont_leitura">0m</span></div>
+        </div>
+
+        <div class="choosePaper">
+            <p class="seguir">Escolher estilo da nota:</p>
+
+            <div class="linha-opcao">
+                <label for="branco">Folha em Branco</label>
+                <input type="radio" name="tipoEstilo" id="branco" value="branco">
+            </div>
+
+            <div class="linha-opcao">
+                <label for="caderno">Folha de Caderno</label>
+                <input type="radio" name="tipoEstilo" id="caderno" value="caderno">
+            </div>
+        </div>
+
+        <div class="opcoes-card">
+            <p class="seguir">Informações do Card:</p>
+
+            <div class="linha-opcao">
+                <label for="checkTitulo">🏷️ Adicionar Título</label>
+                <input type="checkbox" id="checkTitulo" checked>
+            </div>
+
+            <div class="linha-opcao">
+                <label for="checkData">📅 Adicionar Data</label>
+                <input type="checkbox" id="checkData">
+            </div>
+        </div>
+
+        <br> <br>
+        <button id="btnAdicionar_purple_page">Adicionar ao Mural</button>
+
+        <div id="faixa_mural" class="faixa_mural">
+            <span id="texto_faixa">Mural d'Anotações 🖊</span>
+            <span id="seta_mural" class="seta">▲</span>
+        </div>
+        
+        <div id="mural_purple" class="quadro-notas_purple"> </div>
+    </div>
+
+    <div id="mini_previa_fixa" class="mini-previa-fixed">
+
+        <button id="btnAbrirMiniPrevia" style="display: block;">👁️</button>
+        <div id="conteudo_mini_previa" style="display: none;">
+            <div class="topo-mini-previa">
+                <span class="titulo-mini-previa">👁️ Prévia Rápida</span>
+                <button id="btnFecharMiniPrevia" class="btn-fechar-previa">&times;</button>
+            </div>
+
+            <div id="card_previa_espelho" class="card-nota"></div>
+
+            <div class="base-mini-previa">
+                <input type="checkbox" id="checkAceiteRapido">
+                <label for="checkAceiteRapido">Já aceito esses termos</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="tela_seguranca_previa" class="overlay-tela-seguranca">
+        <div class="caixa-seguranca-conteudo">
+            <h2>Confirmar Envio do Card</h2>
+            <p>Por segurança, verifique o visual final da sua página antes de publicar no Mural:</p>
+
+            <div id="card_previa_seguranca_alvo"></div>
+
+            <div class="linha-check-seguranca">
+                <input type="checkbox" id="checkAceiteSeguranca">
+                <label for="checkAceiteSeguranca">Confirmo que o visual está correto</label>
+            </div>
+
+            <div class="botoes-seguranca">
+                <button id="btnCancelarSeguranca" class="btn-seguranca-cancelar">Voltar</button>
+                <button id="btnConfirmarSeguranca" class="btn-seguranca-confirmar">Publiicar no Mural</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="linha-estilo-painel">
+        <label>✍️ Estilo da Escrita:</label>
+        <select id="seletorFonte">
+            <option value="fonte-padrao">Padrão</option>
+            <option value="fonte-manual">Escrito à Mão</option>
+        </select>
+    </div>
+
+    <div class="linha-criptografia-painel">
+        <input type="checkbox" id="checkCriptografiaNordica">
+        <label>🔒 Ativar Criptografia Viking (Runas)</label>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
