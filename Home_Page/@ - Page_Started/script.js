@@ -43,29 +43,52 @@ async function validarSenha(event) {
     const senhaDigitada = campoSenha.value.trim();
     mensagemErro.textContent = "verificando...";
 
-    try {
-        const resposta = await fetch('http://localhost:3000/api/verificar-senha', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ senhaDigitada: senhaDigitada })
-        });
+    // ============================================================================================
+    // =============================== MÉTODO COM SENHA (Simples) =================================
+    // ============================================================================================
 
-        const dados = await resposta.json();
+    const SENHA_TEMPORARIA_GITHUB = "123456"
 
-        if (dados.valido) {
-            mensagemErro.textContent = "";
-            window.location.href = dados.destino;
-        } else {
-            mensagemErro.textContent = dados.mensagem;
-            campoSenha.value = "";
-            campoSenha.focus();
-        }
-    } catch (error) {
-        mensagemErro.textContent = "Erro ao conectar com o servidor de segurança";
-        console.error(error)
+    if (senhaDigitada === SENHA_TEMPORARIA_GITHUB) {
+        mensagemErro.textContent = "";
+
+        window.location.href = "../@ - Others_Page's/Roxo/index.html";
+    } else {
+        mensagemErro.textContent = "Senha incorreta! Tente novamente.";
+        campoSenha.value = "";
+        campoSenha.focus();
     }
+    // ============================================================================================
+
+    // ============================================================================================
+    // ================================ MÉTODO COM SENHA (online) =================================
+    // ============================================================================================
+
+    // try {
+    //     const resposta = await fetch('http://localhost:3000/api/verificar-senha', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify({ senhaDigitada: senhaDigitada })
+    //     });
+
+    //     const dados = await resposta.json();
+
+    //     if (dados.valido) {
+    //         mensagemErro.textContent = "";
+    //         window.location.href = dados.destino;
+    //     } else {
+    //         mensagemErro.textContent = dados.mensagem;
+    //         campoSenha.value = "";
+    //         campoSenha.focus();
+    //     }
+    // } catch (error) {
+    //     mensagemErro.textContent = "Erro ao conectar com o servidor de segurança";
+    //     console.error(error)
+    // }
+
+    // ============================================================================================
 }
 
 btnAbrirPopup.addEventListener('click', abrirPopup);

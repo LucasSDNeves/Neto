@@ -7,3 +7,5 @@
 <!-- https://neto-pied.vercel.app/ -->
 
 <!-- <script src="../caminho/do/script/javascript/footer" data-type="tipoDeFooter"></script> -->
+
+<!-- \Neto\src\components\base\footer\footer.js (Trocar a versão do Site) -->
