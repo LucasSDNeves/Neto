@@ -2,7 +2,7 @@ const footerTemplate_relative = `
     <footer class="footer-relative">
         <div class="footer-content">
             <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
-            <span class="version">// V0.1.5.40_BUILD</span>
+            <span class="version">// V0.1.5.42_BUILD</span>
         </div>
     </footer>
 `;
@@ -11,7 +11,7 @@ const footerTemplate_fixed = `
     <footer class="footer-fixed">
         <div class="footer-content">
             <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
-            <span class="version">// V0.1.5.40_BUILD</span>
+            <span class="version">// V0.1.5.42_BUILD</span>
         </div>
     </footer>
 `;
