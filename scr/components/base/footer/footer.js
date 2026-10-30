@@ -2,7 +2,7 @@ const footerTemplate_relative = `
     <footer class="footer-relative">
         <div class="footer-content">
             <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
-            <span class="version">// V0.1.5.42_BUILD</span>
+            <span class="version">// V0_1.5_43-BUILD</span>
         </div>
     </footer>
 `;
@@ -11,7 +11,7 @@ const footerTemplate_fixed = `
     <footer class="footer-fixed">
         <div class="footer-content">
             <span class="copyright">ALL RIGHTS RESERVED © COPYRIGHT. LucasSDNeves - Made In Brazil </span>
-            <span class="version">// V0.1.5.42_BUILD</span>
+            <span class="version">// V0_1.5_43-BUILD</span>
         </div>
     </footer>
 `;
@@ -36,7 +36,8 @@ async function verificarArquivosCssExternos() {
             if (
                 textoDoCss.includes ('.footer-relative') ||
                 textoDoCss.includes ('.footer-fixed') ||
-                textoDoCss.includes ('footer.css')
+                textoDoCss.includes ('footer.css') ||
+                textoDoCss.includes ('Footer.css')
             ) {
                 return true;
             }

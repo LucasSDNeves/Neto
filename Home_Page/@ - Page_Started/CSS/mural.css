@@ -1,50 +1,6 @@
-:root {
-    /* Paleta de Cores de Fundo */
-    --fundo-principal: #050505;
-    --fundo-card: #0d0f11;
-    --fundo-input: #111111;
-    --fundo-input-erro: #1a0d0f;
-
-    /* Paleta de Texto */
-    --texto-principal: #ffffff;
-    --texto-suporte: #aaaaaa;
-    --texto-links: #888888;
-    --texto-mutado: #666666;
-    --texto-escuro: #444444;
-
-    /* Cores de Alerta e Efeitos Neon */
-    --neon-ciano: #00ffcc;
-    --neon-erro: #ff3366;
-
-    /* Brilhos Neon (Shadows) */
-    --brilho-ciano: 0 0 10px rgba(0, 255, 204, 0.2);
-    --brilho-erro: 0 0 10px rgba(255, 52, 102, 0.15);
-
-    /* Efeitos de Vidro (Glassmorphism */
-    --fundo-vidro: rgba(5, 5, 5, 0.75);
-    --desfoque-vidro: blur(10px);
-
-    /* Bordas & Divisores */
-    --borda-sutil: #111111;
-    --borda-cinza: #222222;
-    --borda-escura: #333333;
-    --borda-card: rgba(0, 255, 204, 0.2);
-    
-    /* Tipografia Industrial */
-    --font-principal: 'Inter', sans-serif;
-    --font-industrial: 'Space Mono', monospace;
-    --font-destaque: 'Black Ops One', system-ui;
-
-    /* Animações e Transições */
-    --transicao-suave: 0.3s ease;
-    --transicao-rapida: 0.15s ease;
-    --curva-industrial: cubic-bezier(0.25, 1, 0.5, 1);
-
-    /* Layout & Estrutura */
-    --padding-secao: 140px 10% 100px 10%;
-}
-
-.mural_section{
+/* =====-----===== Mural de Ideias =====-----===== */
+/* #region */
+.mural_section {
     position: relative;
     width: 100%;
     min-height: 80vh;
@@ -77,7 +33,7 @@
     padding: 25px;
     box-shadow: var(--brilho-ciano);
     box-sizing: border-box;
-    
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -87,7 +43,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 15px;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -117,8 +73,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    text-align: left;    
-    
+    text-align: left;
+
     border: 0px solid #ff00ee;
 }
 
@@ -127,7 +83,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -138,7 +94,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -151,7 +107,7 @@
     line-height: 1.1;
     color: var(--texto-principal);
     margin: 0;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -160,14 +116,14 @@
     font-weight: inherit;
     -webkit-text-fill-color: initial;
     background: none;
-    
+
     border: 0px solid #ff00ee;
 }
 
 .mural_footer_botton {
     padding: 0;
     margin: 0;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -177,7 +133,7 @@
     color: var(--texto-suporte);
     line-height: 1.6;
     margin: 0;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -201,7 +157,8 @@
     border: 1px solid #ff00ee !important;
 } */
 
-.mural_note_purple, .mural_note {
+.mural_note_purple,
+.mural_note {
     height: 170px;
     padding: 20px;
     position: relative;
@@ -212,13 +169,21 @@
     flex-direction: column;
     gap: 12px;
     transition: all var(--transicao-suave);
-    
+
     border: 0px solid #ff00ee;
 }
 
-.mural_board_container .mural_note_purple { transform: rotate(-0.5deg); }
-.mural_board_container .mural_note:nth-child(2) { transform: rotate(1deg); }
-.mural_board_container .mural_note:nth-child(3) { transform: rotate(-1deg); }
+.mural_board_container .mural_note_purple {
+    transform: rotate(-0.5deg);
+}
+
+.mural_board_container .mural_note:nth-child(2) {
+    transform: rotate(1deg);
+}
+
+.mural_board_container .mural_note:nth-child(3) {
+    transform: rotate(-1deg);
+}
 
 
 .note_pin {
@@ -243,7 +208,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -268,10 +233,10 @@
     color: var(--texto-mutado);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    
+
     margin-top: auto;
     align-self: flex-end;
-    
+
     transition: var(--transicao-suave);
 
     border: 0px solid #ff00ee;
@@ -279,7 +244,7 @@
 
 .mural_note_purple:hover .note_author {
     color: var(--neon-ciano);
-    
+
     border: 0px solid #ff00ee;
 }
 
@@ -302,20 +267,28 @@
     font-family: var(--font-principal);
     font-size: 0.85rem;
     line-height: 1.5;
-    
+
     border: 0px solid #ff00ee;
 }
 
 /* Murais */
 /* Neon */
-.mural_note_purple{
+.mural_note_purple {
     background: rgba(0, 255, 204, 0.03);
     border: 1px solid rgba(0, 255, 204, 0.3) !important;
-    
+
     border: 0px solid #ff00ee;
 }
-.mural_note_purple .note_index { color: var(--neon-ciano) ;border: 0px solid #ff00ee; }
-.mural_note_purple .note_text { color: var(--texto-principal) ;border: 0px solid #ff00ee; }
+
+.mural_note_purple .note_index {
+    color: var(--neon-ciano);
+    border: 0px solid #ff00ee;
+}
+
+.mural_note_purple .note_text {
+    color: var(--texto-principal);
+    border: 0px solid #ff00ee;
+}
 
 /* Dark Nota */
 .note_dark {
@@ -324,9 +297,22 @@
 
     border: 0px solid #ff00ee;
 }
-.note_dark .note_index { color: var(--texto-links); border: 0px solid #ff00ee; }
-.note_dark .note_text { color: var(--texto-suporte); border: 0px solid #ff00ee; }
-.note_dark .note_pin { background: var(--texto-escuro); box-shadow: none; border: 0px solid #ff00ee; }
+
+.note_dark .note_index {
+    color: var(--texto-links);
+    border: 0px solid #ff00ee;
+}
+
+.note_dark .note_text {
+    color: var(--texto-suporte);
+    border: 0px solid #ff00ee;
+}
+
+.note_dark .note_pin {
+    background: var(--texto-escuro);
+    box-shadow: none;
+    border: 0px solid #ff00ee;
+}
 
 /* Gray Note */
 .note_gray {
@@ -334,12 +320,25 @@
     border: 1px solid var(--borda-sutil) !important;
 }
 
-.note_gray .note_index { color:var(--texto-mutado); border: 0px solid #ff00ee; }
-.note_gray .note_text { color: var(--texto-suporte); border: 0px solid #ff00ee; }
-.note_gray .note_pin { background: var(--texto-escuro); box-shadow: none; border: 0px solid #ff00ee; }
+.note_gray .note_index {
+    color: var(--texto-mutado);
+    border: 0px solid #ff00ee;
+}
+
+.note_gray .note_text {
+    color: var(--texto-suporte);
+    border: 0px solid #ff00ee;
+}
+
+.note_gray .note_pin {
+    background: var(--texto-escuro);
+    box-shadow: none;
+    border: 0px solid #ff00ee;
+}
 
 
-.mural_note_purple:hover, .mural_note:hover {
+.mural_note_purple:hover,
+.mural_note:hover {
     transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
     border-color: var(--neon-ciano) !important;
     background: var(--fundo-card);
@@ -391,14 +390,36 @@
 }
 
 @media (max-width: 968px) {
-    .mural_asymmetric_container { flex-direction: column-reverse; gap: 35px; border: 0px solid #ff00ee; }
-    .mural_board_container { width: 100%; border: 0px solid #ff00ee; }
-    .mural_text_side_wrapper { width: 100%; align-items: center; text-align: center; border: 0px solid #ff00ee; }
-    .mural_header_top { align-items: center; text-align: center; border: 0px solid #ff00ee; }
+    .mural_asymmetric_container {
+        flex-direction: column-reverse;
+        gap: 35px;
+        border: 0px solid #ff00ee;
+    }
+
+    .mural_board_container {
+        width: 100%;
+        border: 0px solid #ff00ee;
+    }
+
+    .mural_text_side_wrapper {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        border: 0px solid #ff00ee;
+    }
+
+    .mural_header_top {
+        align-items: center;
+        text-align: center;
+        border: 0px solid #ff00ee;
+    }
 }
 
-@media (max-width: 600px ) {
-    .mural_board_container { grid-template-columns: 1fr; border: 0px solid #ff00ee; }
+@media (max-width: 600px) {
+    .mural_board_container {
+        grid-template-columns: 1fr;
+        border: 0px solid #ff00ee;
+    }
 }
 
 /* CARD de TESTE */
@@ -407,37 +428,85 @@
     background: #020202;
     border: 1px solid var(--borda-sutil) !important;
 }
-.note_black .note_index { color: var(--neon-ciano); }
-.note_black .note_text { color: var(--texto-principal); }
-.note_black .note_pin { background: var(--neon-ciano); box-shadow: var(--brilho-ciano); }
+
+.note_black .note_index {
+    color: var(--neon-ciano);
+}
+
+.note_black .note_text {
+    color: var(--texto-principal);
+}
+
+.note_black .note_pin {
+    background: var(--neon-ciano);
+    box-shadow: var(--brilho-ciano);
+}
 
 .note_red {
-    background: rgba(255, 51, 102, 0.03) ;
+    background: rgba(255, 51, 102, 0.03);
     border: 1px solid rgba(255, 51, 102, 0.25) !important;
 }
 
-.note_red .note_index { color: var(--neon-erro); }
-.note_red .note_text { color: var(--texto-principal); }
-.note_red .note_date { color: rgba(255, 51, 102, 0.5); }
-.note_red .note_pin { background: var(--neon-erro); box-shadow: var(--brilho-erro); }
+.note_red .note_index {
+    color: var(--neon-erro);
+}
+
+.note_red .note_text {
+    color: var(--texto-principal);
+}
+
+.note_red .note_date {
+    color: rgba(255, 51, 102, 0.5);
+}
+
+.note_red .note_pin {
+    background: var(--neon-erro);
+    box-shadow: var(--brilho-erro);
+}
 
 .note_blue {
     background: rgba(0, 102, 255, 0.04);
     border: 1px solid rgba(0, 102, 255, 0.25) !important;
 }
-.note_blue .note_index { color: #0066ff; }
-.note_blue .note_text { color: var(--texto-principal); }
-.note_blue .note_date { color: rgba(0, 102, 255, 0.5); }
-.note_blue .note_pin { background: #0066ff; box-shadow: 0 0 10px rgba(0, 102, 255, 0.3); }
+
+.note_blue .note_index {
+    color: #0066ff;
+}
+
+.note_blue .note_text {
+    color: var(--texto-principal);
+}
+
+.note_blue .note_date {
+    color: rgba(0, 102, 255, 0.5);
+}
+
+.note_blue .note_pin {
+    background: #0066ff;
+    box-shadow: 0 0 10px rgba(0, 102, 255, 0.3);
+}
 
 .note_white {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
 }
-.note_blue .note_index { color: var(--texto-principal); }
-.note_blue .note_text { color: var(--texto-suporte); }
-.note_blue .note_date { color: var(--texto-mutado); }
-.note_blue .note_pin { background: var(--texto-principal); box-shadow: 0 0 8px rgba(255, 255, 255, 0.2); }
+
+.note_blue .note_index {
+    color: var(--texto-principal);
+}
+
+.note_blue .note_text {
+    color: var(--texto-suporte);
+}
+
+.note_blue .note_date {
+    color: var(--texto-mutado);
+}
+
+.note_blue .note_pin {
+    background: var(--texto-principal);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
 
 .mural_note:hover {
     transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
@@ -446,7 +515,19 @@
     z-index: 5;
 }
 
-.note_black:hover { border-color: var(--neon-ciano) !important; }
-.note_red:hover { border-color: var(--neon-erro) !important; }
-.note_blue:hover { border-color: #0066ff !important; }
-.note_white:hover { border-color: var(--texto-principal) !important; }
+.note_black:hover {
+    border-color: var(--neon-ciano) !important;
+}
+
+.note_red:hover {
+    border-color: var(--neon-erro) !important;
+}
+
+.note_blue:hover {
+    border-color: #0066ff !important;
+}
+
+.note_white:hover {
+    border-color: var(--texto-principal) !important;
+}
+/* #endregion */

@@ -1,4 +1,6 @@
 
+/* =====-----===== Footer da Página =====-----===== */
+/* #region */
 /* COPY colada na parte de baixo da tela */
 .footer-fixed {
     position: fixed;
@@ -51,3 +53,4 @@
 
     border: 0px solid #ff0090;
 }
+/* #endregion */

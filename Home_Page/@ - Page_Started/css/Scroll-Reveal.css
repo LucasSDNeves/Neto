@@ -1,0 +1,15 @@
+
+/* =====-----===== Fade in-Scroll (Efeito de Subida) =====-----===== */
+/* #region */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s var(--curva-industrial),
+                transform 1s var(--curva-industrial);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* #endregion */
