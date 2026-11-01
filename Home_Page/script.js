@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardCopyright.classList.remove('mostrar');
     });
 
-    Window.addEventListener('click', (event) => {
+    window.addEventListener('click', (event) => {
         if (event.target === cardCopyright) {
             cardCopyright.classList.remove('mostrar');
         }
