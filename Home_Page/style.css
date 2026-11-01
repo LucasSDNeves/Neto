@@ -1,8 +1,9 @@
 
 /* Informações */
-@import url('CSS/variables.css');
+@import url('css/variables.css');
 
 /* Card_Login */
-@import url('CSS/login-cards.css');
+@import url('css/login-cards.css');
 
-@import url('CSS/copyright-modal.css');
+/* Card_Copyright */
+@import url('css/copyright-modal.css');

@@ -93,7 +93,7 @@ formLogin.addEventListener('submit', function(event) {
 
     if (usuarioEncontrado) {
         alert(`Acesso Permitido! Bem-Vindo(a), ${usuarioEncontrado.nome}.`);
-        window.location.href = '@ - Page_Started/index.html';
+        window.location.href = 'Page_Started/index.html';
     } else {
         alert("Acesso Negado! Usuário ou senha incorretos, ou sua solicitação ainda não foi aprovada pelo dono.");
     }

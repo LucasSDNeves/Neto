@@ -52,7 +52,7 @@ async function validarSenha(event) {
     if (senhaDigitada === SENHA_TEMPORARIA_GITHUB) {
         mensagemErro.textContent = "";
 
-        window.location.href = "../@ - Others_Page's/Roxo/index.html";
+        window.location.href = "../Others_Pages/Roxo/index.html";
     } else {
         mensagemErro.textContent = "Senha incorreta! Tente novamente.";
         campoSenha.value = "";
