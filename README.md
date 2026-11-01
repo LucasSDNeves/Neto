@@ -14,13 +14,13 @@
 [Principal_Site](https://lucassdneves.github.io/Neto/Home_Page/index.html)
 
 <!-- Relógios -->
-[Relógios](https://lucassdneves.github.io/Different_Project/Clock_100_Year/index.html)
+[Relógios](https://lucassdneves.github.io/Programar/Clock_100_Year/index.html)
 
 <!-- Futuro Vazio_Roxo -->
-[Futuro_Vazio_Roxo](https://lucassdneves.github.io/Different_Project/NEW_VAZIO_ROXO/index.html)
+[Futuro_Vazio_Roxo](https://lucassdneves.github.io/Programar/NEW_VAZIO_ROXO/index.html)
 
 <!-- Surf_Kanagawa -->
-[Surf_Kanagawa](https://lucassdneves.github.io/Different_Project/Surf_Kanagawa/index.html)
+[Surf_Kanagawa](https://lucassdneves.github.io/Programar/Surf_Kanagawa/index.html)
 
 <!-- Tree_Sakura -->
-[Tree_Sakura](https://lucassdneves.github.io/Different_Project/Tree_Sakura/index.html)
+[Tree_Sakura](https://lucassdneves.github.io/Programar/Tree_Sakura/index.html)
