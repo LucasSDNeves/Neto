@@ -1,9 +1,9 @@
 
-@import url(css/Scroll-Reveal.css);
-@import url(css/NavBar.css);
-@import url(css/Sections.css);
-@import url(css/Mural.css);
-@import url(css/Footer.css);
+@import url('css/Scroll-Reveal.css');
+@import url('css/NavBar.css');
+@import url('css/Sections.css');
+@import url('css/Mural.css');
+@import url('css/Footer.css');
 
 /* =====-----===== Configs Básicas =====-----===== */
 /* #region */
