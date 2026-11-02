@@ -27,6 +27,49 @@
         </nav>
 
         <div class="menu-actions">
+
+            <!-- Theme-Selector -->
+            <div class="theme-dropdown" id="themeDropdown">
+                <button class="dropdown-trigger">
+                    <div class="active-preview preview-geral">
+                        <span class="status-dot"></span>
+                    </div>
+                    <span class="active-name">//TEMA: GERAL</span>
+                    <span class="arrow-icon">▼</span>
+                </button>
+
+                <ul class="dropdown-list">
+                    <li class="dropdown-item active" data-theme="geral" data-name="GERAL">
+                        <div class="theme-preview preview-geral">
+                            <span class="status-dot"></span>
+                        </div>
+                        <span class="item-name">Geral / Base</span>
+                    </li>
+                    
+                    <li class="dropdown-item" data-theme="azul" data-name="AZUL">
+                        <div class="theme-preview preview-azul">
+                            <span class="status-dot"></span>
+                        </div>
+                        <span class="item-name">001 - Azul-Ciano</span>
+                    </li>
+
+                    <li class="dropdown-item" data-theme="Vermelho" data-name="VERMELHO">
+                        <div class="theme-preview preview-vermelho">
+                            <span class="status-dot"></span>
+                        </div>
+                        <span class="item-name">002 - Vermelho Cyber</span>
+                    </li>
+
+                    <li class="dropdown-item" data-theme="Roxo" data-name="Roxo">
+                        <div class="theme-preview preview-roxo">
+                            <span class="status-dot"></span>
+                        </div>
+                        <span class="item-name">003 - Roxo Neon</span>
+                    </li>
+                </ul>
+
+            </div>
+
             <div class="anel-acabamento">
                 <div class="vala-fina">
                     <a href="#" class="link-botao" id="btn-abrir-popup">
@@ -67,230 +110,232 @@
 
     <!-- #region Hero_Principal_01 <main>-->
     <!-- Seção 01_PRINCIPAL -->
-<main>
-    <section class="hero scroll-reveal">
-        <div class="hero-content">
-            <span class="subtitle">"INITIAL" // PÁGINA INICIAL</span>
-            <h1>PAGE_STARTED</h1>
-            <p>Página de informações, textuais e visuais sobre o conteúdo existente em todo o site.</p>
-            <a href="#" class="btn-primary">*CONFIRA! <span class="plus">+</span></a>
-        </div>
-    </section>
+    <main>
+        <section class="hero scroll-reveal">
+            <div class="hero-content">
+                <span class="subtitle">"INITIAL" // PÁGINA INICIAL</span>
+                <h1>PAGE_STARTED</h1>
+                <p>Página de informações, textuais e visuais sobre o conteúdo existente em todo o site.</p>
+                <a href="#" class="btn-primary">*CONFIRA! <span class="plus">+</span></a>
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Statics -->
+        <!-- Seção de Estatísticas_PRINCIPAL -->
+        <section class="stats-section scroll-reveal">
+            <div class="section-index">01 // INFORMAÇÕES</div>
+            <h2>DADOS // INFORMAÇÕES SOBRE WIDGET's & APLICAÇÕES DO SITE</h2>
+
+            <div class="stats-tabs-nav">
+                <button class="tab-btn active" data-tab="geral">Geral</button>
+                <button class="tab-btn" data-tab="azul">Azul</button>
+                <button class="tab-btn" data-tab="vermelho">Vermelho</button>
+                <button class="tab-btn" data-tab="roxo">Roxo</button>
+            </div>
+
+            <div class="stats-tabs-content">
+
+                <div class="stats-grid grid-3">
+                    <div class="stat-card">
+                        <span class="number">197.121</span>
+                        <p>Caracters Escritos até o Momento.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number">10.5%</span>
+                        <p>dos textos marcados como concluídos.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number">1.000</span>
+                        <p>de textos criados.</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid grid-4 row-extra-a">
+                    <div class="stat-card">
+                        <span class="number small">Métrica A1</span>
+                        <p>Descrição do indicador de dados adicionais A1.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number small">Métrica A2</span>
+                        <p>Descrição do indicador de dados adicionais A2.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number small">Métrica A3</span>
+                        <p>Descrição do indicador de dados adicionais A3.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number small">Métrica A4</span>
+                        <p>Descrição do indicador de dados adicionais A4.</p>
+                    </div>
+                </div>
+
+                <div class="stats-grid grid-4 row-extra-b">
+                    <div class="stat-card">
+                        <span class="number small">Métrica B1</span>
+                        <p>Descrição do indicador de dados adicionais B1.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number small">Métrica B2</span>
+                        <p>Descrição do indicador de dados adicionais B2.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number small">Métrica B3</span>
+                        <p>Descrição do indicador de dados adicionais B3.</p>
+                    </div>
+                    <div class="stat-card">
+                        <span class="number small">Métrica B4</span>
+                        <p>Descrição do indicador de dados adicionais B4.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- #endregion  -->
+
+        <!-- #region Mural -->
+        <section class="mural_section scroll-reveal" id="mural">
+            <div class="section-index">02 // MURAL DE IDEIAS</div>
+            <div class="mural_asymmetric_container">
+
+                <div class="mural_board_container">
+
+                    <div class="mural_note_purple">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">01 // PÁGINA - VAZIO ROXO</span>
+                            <span class="note_date">15.10.2026</span>
+                        </div>
+                        <p class="note_text">° Termina de desenvolver o Body.</p>
+                        <p class="note_text">ºDesenvolver/Criar suas ferramentas.</p>
+                        <span class="note_author">@ADM</span>
+                    </div>
+
+                    <div class="mural_note note_dark">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">02 // PÁGINA - AZUL</span>
+                            <span class="note_date">15.10.2026</span>
+                        </div>
+                        <p class="note_text">Começar o desenvolvimento e criação da página. (Nada criado até o momento.)
+                        </p>
+                        <span class="note_author">@ADM</span>
+                    </div>
+
+                    <div class="mural_note note_gray">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">03 // PÁGINA - VERMELHO </span>
+                            <span class="note_date">15.10.2026</span>
+                        </div>
+                        <p class="note_text">Começar o desenvolvimento e criação da página. (Nada criado até o momento.)
+                        </p>
+                        <span class="note_author">@ADM</span>
+                    </div>
+
+                    <!-- Part Teste -->
+                    <div class="mural_note note_black">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">01 // BLACK CORE</span>
+                            <span class="note_date">--/--/----</span>
+                        </div>
+                        <p class="note_text">Módulos de testes.</p>
+                        <span class="note_author">@ADM_teste</span>
+                    </div>
+
+
+                    <div class="mural_note note_red">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">02 // ALERTA</span>
+                            <span class="note_date">--/--/----</span>
+                        </div>
+                        <p class="note_text">Módulos de testes.</p>
+                        <span class="note_author">@ADM_teste</span>
+                    </div>
+
+
+                    <div class="mural_note note_blue">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">03 // AZUL CORE</span>
+                            <span class="note_date">--/--/----</span>
+                        </div>
+                        <p class="note_text">Módulos de testes.</p>
+                        <span class="note_author">@ADM_teste</span>
+                    </div>
+
+
+                    <div class="mural_note note_white">
+                        <div class="note_pin"></div>
+                        <div class="note_header_bar">
+                            <span class="note_index">04 // LABELS</span>
+                            <span class="note_date">--/--/----</span>
+                        </div>
+                        <p class="note_text">Módulos de testes.</p>
+                        <span class="note_author">@ADM_teste</span>
+                    </div>
+
+                    <!--  -->
+
+                    <div class="note_shadow_slot_blank">
+                        <span class="slot_plus_icon">+</span>
+                        <span class="slot_blank_text">Nova Nota</span>
+                    </div>
+
+                </div>
+
+                <div class="mural_text side_wrapper">
+                    <div class="mural_header_top">
+                        <span class="mural_tag">// IDEAL'S</span>
+                        <h2 class="mural_big_title">Mural de<br><strong>Ideias</strong>.</h2>
+                    </div>
+                    <div class="mural_footer_botton">
+                        <p class="mural_description">
+                            Blocos de Notas que guardam ideias, sugestões, processos de modificação/construção do site,
+                            lembretes, e algumas outras coisas, relacionados ao site e suas páginas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Section_02 </main> -->
+        <section class="split-grid-section scroll-reveal">
+            <div class="section-index">02 // APPLICATIONS</div>
+            <div class="split-grid">
+                <div class="grid-box box-side">
+                    <span class="box-tag">// SISTEMA</span>
+                    <h3>Módulos de Interface</h3>
+                    <p>Componentes Isolados e Otimizados para Renderização de Dados em Tempo Real no Dashborad.</p>
+                </div>
+
+                <div class="grid-box box-center">
+                    <span class="box-tag">// NÚCLEO</span>
+                    <h2>PRODUÇÃO ATUAL DE CÓDIGO DO PROJETO</h2>
+                    <p>O desenvolvimento da arquitetura segue o padrão minimalista de alte perfoma.</p>
+                    <a href="#" class="link-arrow">Ver documento +</a>
+                </div>
+
+                <div class="grid-box box-side">
+                    <span class="box-tag">// DESIGN</span>
+                    <h3>Identidade Mono</h3>
+                    <p>Uso de tipografia industrial para a exibição de logs, índices e métricas de sistema.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- #endregion -->
 
-    <!-- #region Statics -->
-    <!-- Seção de Estatísticas_PRINCIPAL -->
-    <section class="stats-section scroll-reveal">
-        <div class="section-index">01 // INFORMAÇÕES</div>
-        <h2>DADOS // INFORMAÇÕES SOBRE WIDGET's & APLICAÇÕES DO SITE</h2>
-
-        <div class="stats-tabs-nav">
-            <button class="tab-btn active" data-tab="geral">Geral</button>
-            <button class="tab-btn" data-tab="azul">Azul</button>
-            <button class="tab-btn" data-tab="vermelho">Vermelho</button>
-            <button class="tab-btn" data-tab="roxo">Roxo</button>
-        </div>
-
-        <div class="stats-tabs-content">
-
-            <div class="stats-grid grid-3">
-                <div class="stat-card">
-                    <span class="number">197.121</span>
-                    <p>Caracters Escritos até o Momento.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number">10.5%</span>
-                    <p>dos textos marcados como concluídos.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number">1.000</span>
-                    <p>de textos criados.</p>
-                </div>
-            </div>
-
-            <div class="stats-grid grid-4 row-extra-a">
-                <div class="stat-card">
-                    <span class="number small">Métrica A1</span>
-                    <p>Descrição do indicador de dados adicionais A1.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number small">Métrica A2</span>
-                    <p>Descrição do indicador de dados adicionais A2.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number small">Métrica A3</span>
-                    <p>Descrição do indicador de dados adicionais A3.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number small">Métrica A4</span>
-                    <p>Descrição do indicador de dados adicionais A4.</p>
-                </div>
-            </div>
-
-            <div class="stats-grid grid-4 row-extra-b">
-                <div class="stat-card">
-                    <span class="number small">Métrica B1</span>
-                    <p>Descrição do indicador de dados adicionais B1.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number small">Métrica B2</span>
-                    <p>Descrição do indicador de dados adicionais B2.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number small">Métrica B3</span>
-                    <p>Descrição do indicador de dados adicionais B3.</p>
-                </div>
-                <div class="stat-card">
-                    <span class="number small">Métrica B4</span>
-                    <p>Descrição do indicador de dados adicionais B4.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-    <!-- #endregion  -->
-
-    <!-- #region Mural -->
-    <section class="mural_section scroll-reveal" id="mural">
-        <div class="section-index">02 // MURAL DE IDEIAS</div>
-        <div class="mural_asymmetric_container">
-
-            <div class="mural_board_container">
-
-                <div class="mural_note_purple">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">01 // PÁGINA - VAZIO ROXO</span>
-                        <span class="note_date">15.10.2026</span>
-                    </div>
-                    <p class="note_text">° Termina de desenvolver o Body.</p>
-                    <p class="note_text">ºDesenvolver/Criar suas ferramentas.</p>
-                    <span class="note_author">@ADM</span>
-                </div>
-
-                <div class="mural_note note_dark">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">02 // PÁGINA - AZUL</span>
-                        <span class="note_date">15.10.2026</span>
-                    </div>
-                    <p class="note_text">Começar o desenvolvimento e criação da página. (Nada criado até o momento.)</p>
-                    <span class="note_author">@ADM</span>
-                </div>
-
-                <div class="mural_note note_gray">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">03 // PÁGINA - VERMELHO </span>
-                        <span class="note_date">15.10.2026</span>
-                    </div>
-                    <p class="note_text">Começar o desenvolvimento e criação da página. (Nada criado até o momento.)</p>
-                    <span class="note_author">@ADM</span>
-                </div>
-
-                <!-- Part Teste -->
-                <div class="mural_note note_black">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">01 // BLACK CORE</span>
-                        <span class="note_date">--/--/----</span>
-                    </div>
-                    <p class="note_text">Módulos de testes.</p>
-                    <span class="note_author">@ADM_teste</span>
-                </div>
-
-                
-                <div class="mural_note note_red">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">02 // ALERTA</span>
-                        <span class="note_date">--/--/----</span>
-                    </div>
-                    <p class="note_text">Módulos de testes.</p>
-                    <span class="note_author">@ADM_teste</span>
-                </div>
-
-                
-                <div class="mural_note note_blue">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">03 // AZUL CORE</span>
-                        <span class="note_date">--/--/----</span>
-                    </div>
-                    <p class="note_text">Módulos de testes.</p>
-                    <span class="note_author">@ADM_teste</span>
-                </div>
-
-                
-                <div class="mural_note note_white">
-                    <div class="note_pin"></div>
-                    <div class="note_header_bar">
-                        <span class="note_index">04 // LABELS</span>
-                        <span class="note_date">--/--/----</span>
-                    </div>
-                    <p class="note_text">Módulos de testes.</p>
-                    <span class="note_author">@ADM_teste</span>
-                </div>
-
-                <!--  -->
-
-                <div class="note_shadow_slot_blank">
-                    <span class="slot_plus_icon">+</span>
-                    <span class="slot_blank_text">Nova Nota</span>
-                </div>
-
-            </div>
-
-            <div class="mural_text side_wrapper">
-                <div class="mural_header_top">
-                    <span class="mural_tag">// IDEAL'S</span>
-                    <h2 class="mural_big_title">Mural de<br><strong>Ideias</strong>.</h2>
-                </div>
-                <div class="mural_footer_botton">
-                    <p class="mural_description">
-                        Blocos de Notas que guardam ideias, sugestões, processos de modificação/construção do site,
-                        lembretes, e algumas outras coisas, relacionados ao site e suas páginas.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
+    <!-- #region Footer <footer> </footer> -->
+    <footer id="site-footer">
+        <script src="../../scr/components/base/footer/footer.js" data-type="relative"></script>
+    </footer>
     <!-- #endregion -->
-
-    <!-- #region Section_02 </main> -->
-    <section class="split-grid-section scroll-reveal">
-        <div class="section-index">02 // APPLICATIONS</div>
-        <div class="split-grid">
-            <div class="grid-box box-side">
-                <span class="box-tag">// SISTEMA</span>
-                <h3>Módulos de Interface</h3>
-                <p>Componentes Isolados e Otimizados para Renderização de Dados em Tempo Real no Dashborad.</p>
-            </div>
-
-            <div class="grid-box box-center">
-                <span class="box-tag">// NÚCLEO</span>
-                <h2>PRODUÇÃO ATUAL DE CÓDIGO DO PROJETO</h2>
-                <p>O desenvolvimento da arquitetura segue o padrão minimalista de alte perfoma.</p>
-                <a href="#" class="link-arrow">Ver documento +</a>
-            </div>
-
-            <div class="grid-box box-side">
-                <span class="box-tag">// DESIGN</span>
-                <h3>Identidade Mono</h3>
-                <p>Uso de tipografia industrial para a exibição de logs, índices e métricas de sistema.</p>
-            </div>
-        </div>
-    </section>
-</main>
-    <!-- #endregion -->
-
-<!-- #region Footer <footer> </footer> -->
-<footer id="site-footer">
-    <script src="../../scr/components/base/footer/footer.js" data-type="relative"></script>
-</footer>
-<!-- #endregion -->
 
     <script src="script.js"></script>
 </body>

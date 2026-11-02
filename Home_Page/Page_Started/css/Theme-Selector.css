@@ -1,0 +1,180 @@
+
+/* =====-----===== Seletor de Temas =====-----===== */
+/* #region dropdown */
+.theme-dropdown {
+    position: relative;
+    font-family: var(--font-industrial);
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--borda-sutil) !important;
+    padding: 8px 14px;
+    border-radius: 2px;
+    color: var(--texto-principal);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: all var(--transicao-suave);
+    line-height: 1;
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-trigger:hover {
+    border-color: var(--neon-ciano) !important;
+    box-shadow: var(--brilho-ciano);
+
+    border: 0px solid #ff00d9;
+}
+
+.arrow-icon {
+    font-size: 0.6rem;
+    color: var(--texto-mutado);
+    margin-left: 2px;
+    transition: transform var(--transicao-suave);
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    width: 210px;
+    background: #0a0a0a;
+    border: 1px solid var(--borda-card) !important;
+    border-radius: 2px;
+    padding: 4px 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: all var(--transicao-suave);
+    z-index: 200;
+
+    border: 0px solid #ff00d9;
+}
+
+.theme-dropdown.open .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    border: 0px solid #ff00d9;
+}
+
+.theme-dropdown.open .arrow-icon {
+    transform: rotate(180deg);
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background var(--transicao-rapida);
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-item.active {
+    background: rgba(0, 255, 204, 0.06);
+
+    border: 0px solid #ff00d9;
+}
+
+.item-name {
+    font-size: 0.8rem;
+    color: var(--texto-suporte);
+    text-transform: uppercase;
+
+    border: 0px solid #ff00d9;
+}
+
+.active-name {
+    text-transform: uppercase;
+    color: var(--texto-principal);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+    border: 0px solid #ff00d9;
+}
+
+.dropdown-item.active .item-name {
+    color: var(--neon-ciano);
+    font-weight: bold;
+
+    border: 0px solid #ff00d9;
+}
+
+.theme-preview, .active-preview {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 18px;
+    border-radius: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.25) !important;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+
+    border: 0px solid #ff00d9;
+}
+
+.preview-geral { background: linear-gradient(135deg, #111 50%, #333 50%); border: 0px solid #ff00d9; }
+.preview-azul { background: linear-gradient(135deg, #0a192f 50%, #00ffcc 50%); border: 0px solid #ff00d9; }
+.preview-vermelho { background: linear-gradient(135deg, #1a050d 50%, #ff0055 50%); border: 0px solid #ff00d9; }
+.preview-roxo{ background: linear-gradient(135deg, #0f051d 50%, #8a2be2 50%); border: 0px solid #ff00d9; }
+
+.status-dot {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #000000 !important;
+    background-color: #555;
+    transition: all var(--transicao-suave);
+
+    border: 0px solid #ff00d9;
+}
+
+.preview-geral .status-dot { background-color: #888; border: 0px solid #ff00d9; }
+.preview-azul .status-dot { background-color: #00ffcc; border: 0px solid #ff00d9; }
+.preview-vermelho .status-dot {background-color: #ff0055; border: 0px solid #ff00d9; }
+.preview-roxo .status-dot { background-color: #8a2be2; border: 0px solid #ff00d9; }
+
+.active-preview .status-dot {
+    animation: pulse-dot 2s infinite;
+
+    border: 0px solid #ff00d9;
+}
+
+@keyframes pulse-dot {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+    
+}
+
+/* #endregion */

@@ -101,3 +101,39 @@ fundoPopup.addEventListener('click', function(event) {
     }
 });
 // #endregion
+
+// #region Theme-Selector Dropdown
+const dropdown = document.getElementById('themeDropdown');
+const trigger = dropdown.querySelector('.dropdown-trigger');
+const items = dropdown.querySelectorAll('.dropdown-item');
+
+trigger.addEventListener('click', (e) => {
+    e.stopPropagation ();
+    dropdown.classList.toggle('open');
+});
+
+document.addEventListener('click', () => {
+    dropdown.classList.remove('open')
+});
+
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        items.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+
+        const theme = item.getAttribute('data-theme');
+        const themeName = item.getAttribute('data-name');
+
+        dropdown.querySelector('.active-name').textContent = `// TEMA: ${themeName}`;
+
+        const activePreview = dropdown.querySelector('.active-preview');
+        activePreview.className = `active-preview preview-${theme}`;
+
+        document.body.className = '';
+        if (theme !== 'geral') {
+            document.body.classList.add(`theme-${theme}`);
+        }
+    });
+});
+
+// #endregion
