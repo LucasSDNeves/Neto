@@ -12,14 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-industrial);
 
     border: 0px solid #ff0090;
 }
 
 body {
-    background-color: #050505;
-    color: #ffffff;
+    background-color: var(--fundo-principal);
+    color: var(--texto-principal);
     overflow-x: hidden;
     padding-bottom: 80px;
 
@@ -68,6 +68,10 @@ body {
     --transicao-suave: 0.3s ease;
     --transicao-rapida: 0.15s ease;
     --curva-industrial: cubic-bezier(0.25, 1, 0.5, 1);
+
+    /* Efeitos de Fundo Específicos das Seções */
+    --hero-bg-gradient: radial-gradient(circle at 80% 50%, var(--borda-sutil) 0%, var(--fundo-principal) 100%);
+    --stats-bg-gradient: radial-gradient(circle at 50% 50%, rgba(0, 255, 204, 0.02) 0%, var(--fundo-principal) 70%);
 
     /* Layout & Estrutura */
     --padding-secao: 140px 10% 100px 10%;
