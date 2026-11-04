@@ -19,14 +19,14 @@
     left: 0;
     width: 100%;
     padding: 15px 10%;
-    background: var(--fundo-vidro);
-    backdrop-filter: var(--desfoque-vidro);
+    background: rgba(5, 5, 5, 0.75);
+    backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
     z-index: 99;
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
     letter-spacing: 2px;
-    color: var(--texto-mutado);
+    color: #666666;
 
     border: 0px solid #ff0090;
 }
@@ -36,13 +36,13 @@
     position: relative;
     width: 100%;
     padding: 30px 10%;
-    background: var(--fundo-vidro);
-    backdrop-filter: var(--desfoque-vidro);
+    background: rgba(5, 5, 5, 0.75);
+    backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
     font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
     letter-spacing: 2px;
-    color: var(--texto-mutado);
+    color: #666666;
     bottom: -90px;
 
     border: 0px solid #ff0090;

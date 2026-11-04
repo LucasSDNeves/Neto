@@ -12,14 +12,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
 
     border: 0px solid #ff0090;
 }
 
 body {
-    background-color: var(--fundo-principal);
-    color: var(--texto-principal);
+    background-color: #050505;
+    color: #ffffff;
     overflow-x: hidden;
     padding-bottom: 80px;
 
@@ -30,50 +30,6 @@ body {
 /* =====-----===== Root =====-----===== */
 /* #region */
 :root {
-    /* Paleta de Cores */
-    --fundo-principal: #050505;
-    --fundo-card: #0d0f11;
-    --fundo-input: #111111;
-    --fundo-input-erro: #1a0d0f;
-    --texto-principal: #ffffff;
-    --texto-mutado: #666666;
-    --texto-suporte: #aaaaaa;
-    --texto-links: #888888;
-    --texto-escuro: #444444;
-
-    /* Efeitos Neon */
-    --neon-ciano: #00ffcc;
-    --neon-erro: #ff3366;
     
-    /* Brilhos Neon */
-    --brilho-ciano: 0 0 10px rgba(0, 255, 204, 0.2);
-    --brilho-erro: 0 0 10px rgba(255, 52, 102, 0.15);
-    
-    /* Efeitos de Vidro */
-    --fundo-vidro: rgba(5, 5, 5, 0.75);
-    --desfoque-vidro: blur(10px);
-
-    /* --Bordas & Divisores */
-    --borda-sutil: #111111;
-    --borda-card: rgba(0, 255, 204, 0.2);
-    --borda-cinza: #222222;
-    --borda-escura: #333333;
-
-    /* Tipografia */
-    --font-principal: 'Inter', sans-serif;
-    --font-industrial: 'Space Mono', monospace;
-    --font-destaque: 'Black Ops One', system-ui;
-
-    /* Animações e Transições */
-    --transicao-suave: 0.3s ease;
-    --transicao-rapida: 0.15s ease;
-    --curva-industrial: cubic-bezier(0.25, 1, 0.5, 1);
-
-    /* Efeitos de Fundo Específicos das Seções */
-    --hero-bg-gradient: radial-gradient(circle at 80% 50%, var(--borda-sutil) 0%, var(--fundo-principal) 100%);
-    --stats-bg-gradient: radial-gradient(circle at 50% 50%, rgba(0, 255, 204, 0.02) 0%, var(--fundo-principal) 70%);
-
-    /* Layout & Estrutura */
-    --padding-secao: 140px 10% 100px 10%;
 }
 /* #endregion */

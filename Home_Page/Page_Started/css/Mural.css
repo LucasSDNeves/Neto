@@ -8,9 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--padding-secao);
+    padding: 140px 10% 100px 10%;
     background-color: #030303;
-    border-top: 1px solid var(--borda-sutil) !important;
+    border-top: 1px solid #111111 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 
@@ -30,9 +30,9 @@
 .mural_board_container {
     width: 65%;
     background-color: rgba(255, 255, 255, 0.01);
-    border: 1px solid var(--borda-sutil) !important;
+    border: 1px solid #111111 !important;
     padding: 25px;
-    box-shadow: var(--brilho-ciano);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
     box-sizing: border-box;
 
     display: grid;
@@ -55,15 +55,15 @@
 }
 
 .mural_board_container::-webkit-scrollbar-thumb {
-    background: var(--borda-escura);
+    background: #333333;
     border-radius: 2px;
-    transition: var(--transicao-suave);
+    transition: 0.3s ease;
 
     border: 0px solid #ff00ee;
 }
 
 .mural_board_container::-webkit-scrollbar-thumb:hover {
-    background: var(--neon-ciano);
+    background: #00ffcc;
 
     border: 0px solid #ff00ee !important;
 }
@@ -89,9 +89,9 @@
 }
 
 .mural_header_top .mural_tag {
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
     font-size: 0.85rem;
-    color: var(--neon-ciano);
+    color: #00ffcc;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
@@ -100,20 +100,20 @@
 }
 
 .mural_header_top .mural_big_title {
-    font-family: var(--font-destaque);
+    font-family: 'Black Ops One', system-ui;
     font-style: oblique;
     font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1.1;
-    color: var(--texto-principal);
+    color: #ffffff;
     margin: 0;
 
     border: 0px solid #ff00ee;
 }
 
 .mural_header_top .mural_big_title strong {
-    color: var(--neon-ciano);
+    color: #00ffcc;
     font-weight: inherit;
     -webkit-text-fill-color: initial;
     background: none;
@@ -129,9 +129,9 @@
 }
 
 .mural_footer_botton .mural_description {
-    font-family: var(--font-principal);
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    color: var(--texto-suporte);
+    color: #aaaaaa;
     line-height: 1.6;
     margin: 0;
 
@@ -169,7 +169,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all var(--transicao-suave);
+    transition: all 0.3s ease;
 
     border: 0px solid #ff00ee;
 }
@@ -190,20 +190,20 @@
 .note_pin {
     width: 6px;
     height: 6px;
-    background: var(--neon-ciano);
+    background: #00ffcc;
     border-radius: 50%;
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: var(--brilho-ciano);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
 
     border: 0px solid #ff00ee;
 }
 
 .note_header_bar {
     width: 100%;
-    border-bottom: 1px solid var(--borda-sutil) !important;
+    border-bottom: 1px solid #111111 !important;
     padding-bottom: 6px;
 
     display: flex;
@@ -214,9 +214,9 @@
 }
 
 .note_date {
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
     font-size: 0.65rem;
-    color: var(--texto-mutado);
+    color: #666666;
     letter-spacing: 0.5px;
 
     border: 0px solid #ff00ee;
@@ -229,34 +229,34 @@
 }
 
 .note_author {
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
     font-size: 0.65rem;
-    color: var(--texto-mutado);
+    color: #666666;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 
     margin-top: auto;
     align-self: flex-end;
 
-    transition: var(--transicao-suave);
+    transition: 0.3s ease;
 
     border: 0px solid #ff00ee;
 }
 
 .mural_note_purple:hover .note_author {
-    color: var(--neon-ciano);
+    color: #00ffcc;
 
     border: 0px solid #ff00ee;
 }
 
 .mural_note:hover .note_author {
-    color: var(--texto-principal);
+    color: #ffffff;
 
     border: 0px solid #ff00ee;
 }
 
 .note_index {
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -265,7 +265,7 @@
 }
 
 .note_text {
-    font-family: var(--font-principal);
+    font-family: 'Inter', sans-serif;
     font-size: 0.85rem;
     line-height: 1.5;
 
@@ -282,35 +282,35 @@
 }
 
 .mural_note_purple .note_index {
-    color: var(--neon-ciano);
+    color: #00ffcc;
     border: 0px solid #ff00ee;
 }
 
 .mural_note_purple .note_text {
-    color: var(--texto-principal);
+    color: #ffffff;
     border: 0px solid #ff00ee;
 }
 
 /* Dark Nota */
 .note_dark {
-    background: var(--fundo-card);
-    border: 1px solid var(--borda-escura) !important;
+    background: #0d0f11;
+    border: 1px solid #333333 !important;
 
     border: 0px solid #ff00ee;
 }
 
 .note_dark .note_index {
-    color: var(--texto-links);
+    color: #888888;
     border: 0px solid #ff00ee;
 }
 
 .note_dark .note_text {
-    color: var(--texto-suporte);
+    color: #aaaaaa;
     border: 0px solid #ff00ee;
 }
 
 .note_dark .note_pin {
-    background: var(--texto-escuro);
+    background: #444444;
     box-shadow: none;
     border: 0px solid #ff00ee;
 }
@@ -318,21 +318,21 @@
 /* Gray Note */
 .note_gray {
     background: rgba(255, 255, 255, 0.01);
-    border: 1px solid var(--borda-sutil) !important;
+    border: 1px solid #111111 !important;
 }
 
 .note_gray .note_index {
-    color: var(--texto-mutado);
+    color: #666666;
     border: 0px solid #ff00ee;
 }
 
 .note_gray .note_text {
-    color: var(--texto-suporte);
+    color: #aaaaaa;
     border: 0px solid #ff00ee;
 }
 
 .note_gray .note_pin {
-    background: var(--texto-escuro);
+    background: #444444;
     box-shadow: none;
     border: 0px solid #ff00ee;
 }
@@ -341,8 +341,8 @@
 .mural_note_purple:hover,
 .mural_note:hover {
     transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
-    border-color: var(--neon-ciano) !important;
-    background: var(--fundo-card);
+    border-color: #00ffcc !important;
+    background: #0d0f11;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     z-index: 5;
 
@@ -353,7 +353,7 @@
     height: 170px;
     background-color: transparent;
     border-radius: 0px 8px 0px 8px;
-    border: 1px dashed var(--borda-escura) !important;
+    border: 1px dashed #333333 !important;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -361,23 +361,23 @@
     justify-content: center;
     gap: 8px;
     cursor: not-allowed;
-    transition: var(--transicao-suave);
+    transition: 0.3s ease;
 
     border: 0px solid #ff00ee;
 }
 
 .slot_plus_icon {
     font-size: 1.3rem;
-    color: var(--texto-escuro);
+    color: #444444;
 
     border: 0px solid #ff00ee;
 }
 
 .slot_blank_text {
-    font-family: var(--font-industrial);
+    font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
     text-transform: uppercase;
-    color: var(--texto-mutado);
+    color: #666666;
     letter-spacing: 1px;
 
     border: 0px solid #ff00ee;
@@ -385,7 +385,7 @@
 
 .note_shadow_slot_blank:hover {
     background-color: rgba(255, 255, 255, 0.01);
-    border-color: var(--texto-mutado) !important;
+    border-color: #666666 !important;
 
     border: 0px solid #ff00ee;
 }
@@ -427,20 +427,20 @@
 
 .note_black {
     background: #020202;
-    border: 1px solid var(--borda-sutil) !important;
+    border: 1px solid #111111 !important;
 }
 
 .note_black .note_index {
-    color: var(--neon-ciano);
+    color: #00ffcc;
 }
 
 .note_black .note_text {
-    color: var(--texto-principal);
+    color: #ffffff;
 }
 
 .note_black .note_pin {
-    background: var(--neon-ciano);
-    box-shadow: var(--brilho-ciano);
+    background: #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
 }
 
 .note_red {
@@ -449,11 +449,11 @@
 }
 
 .note_red .note_index {
-    color: var(--neon-erro);
+    color: #ff3366;
 }
 
 .note_red .note_text {
-    color: var(--texto-principal);
+    color: #ffffff;
 }
 
 .note_red .note_date {
@@ -461,8 +461,8 @@
 }
 
 .note_red .note_pin {
-    background: var(--neon-erro);
-    box-shadow: var(--brilho-erro);
+    background: #ff3366;
+    box-shadow: 0 0 10px rgba(255, 52, 102, 0.15);
 }
 
 .note_blue {
@@ -475,7 +475,7 @@
 }
 
 .note_blue .note_text {
-    color: var(--texto-principal);
+    color: #ffffff;
 }
 
 .note_blue .note_date {
@@ -493,35 +493,35 @@
 }
 
 .note_blue .note_index {
-    color: var(--texto-principal);
+    color: #ffffff;
 }
 
 .note_blue .note_text {
-    color: var(--texto-suporte);
+    color: #aaaaaa;
 }
 
 .note_blue .note_date {
-    color: var(--texto-mutado);
+    color: #666666;
 }
 
 .note_blue .note_pin {
-    background: var(--texto-principal);
+    background: #ffffff;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
 .mural_note:hover {
     transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
-    background: var(--fundo-card);
+    background: #0d0f11;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     z-index: 5;
 }
 
 .note_black:hover {
-    border-color: var(--neon-ciano) !important;
+    border-color: #00ffcc !important;
 }
 
 .note_red:hover {
-    border-color: var(--neon-erro) !important;
+    border-color: #ff3366 !important;
 }
 
 .note_blue:hover {
@@ -529,6 +529,6 @@
 }
 
 .note_white:hover {
-    border-color: var(--texto-principal) !important;
+    border-color: #ffffff !important;
 }
 /* #endregion */

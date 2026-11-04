@@ -8,9 +8,9 @@ body {
 
     overflow: hidden;
     position: relative;
-    background-color: var(--cor-background);
+    background-color: #05070a;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .container-imagem {
@@ -22,7 +22,7 @@ body {
     z-index: 1;
     overflow: hidden;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .lado-imagem {
@@ -42,174 +42,174 @@ body {
 .lado-login {
     position: absolute;
     width: 100%;
-    max-width: var(--card-max-width);
+    max-width: 440px;
     z-index: 10;
-    background-color: var(--card-fundo-inicial);
-    backdrop-filter: var(--card-blur-inicial);
-    -webkit-backdrop-filter: var(--card-blur-inicial);
+    background-color: rgba(10, 12, 18, 0.4);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
 
     padding: 40px;
-    border-radius: var(--card-radius);
-    box-shadow: var(--card-sombra-inicial);
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0);
 
-    border: 1px solid var(--card-borda-inicial) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
 
     opacity: 0;
     pointer-events: auto;
 
-    transition: var(--transicao-cards);
+    transition: opacity 0.5s ease, backdrop-filter 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
 
-    /* border: 0px solid var(--cor-teste-debug); */
+    /* border: 0px solid #ff02d9; */
 }
 
 .lado-login a {
-    color: var(--cor-principal);
+    color: #007bff;
     text-decoration: none;
     font-weight: 600;
-    transition: var(--transicao-rapida);
+    transition: 0.15s ease;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .lado-login a:hover {
-    color: var(--cor-principal-hover);
+    color: #0056b3;
     text-decoration: underline;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .lado-login:hover,
 .lado-login:focus-within {
     opacity: 1;
-    background-color: var(--card-fundo-hover);
-    backdrop-filter: var(--card-blur-hover);
-    -webkit-backdrop-filter: var(--card-blur-hover);
-    border: 1px solid var(--card-borda-hover) !important;
-    box-shadow: var(--card-sombra-hover);
+    background-color: rgba(10, 12, 18, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: rgba(0, 0, 0, 0.6);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .lado-login h2 {
     margin-bottom: 30px;
-    color: var(--texto-claro);
+    color: #ffffff;
     font-size: 26px;
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.5px;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .lado-login:hover h2 {
-    text-shadow: 0 0 10px var(--texto-glow-titulo);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .lado-login p {
     margin-top: 25px;
     font-size: 13px;
-    color: var(--texto-escuro);
+    color: #444444;
     text-align: center;
     line-height: 1.5;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .campo-grupo {
     margin-bottom: 24px;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .campo-grupo label {
     display: block;
     margin-bottom: 8px;
-    color: var(--texto-intermediario);
+    color: #e0e0e0;
     font-size: 14px;
     font-weight: 600;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .campo-grupo textarea {
     width: 100%;
     padding: 14px;
     font-size: 16px;
-    border-radius: var(--input-radius);
+    border-radius: 10px;
     outline: none;
-    color: var(--texto-claro);
-    background-color: var(--input-fundo);
-    border: 1px solid var(--input-borda);
-    transition: var(--transicao-suave);
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
     resize: none;
     font-family: inherit;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .campo-grupo textarea:focus {
-    border-color: var(--cor-principal);
-    background-color: var(--input-fundo-focus);
-    box-shadow: 0 0 0 4px var(--cor-principal-glow);
+    border-color: #007bff;
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .campo-grupo input {
     width: 100%;
     padding: 14px;
     font-size: 16px;
-    border-radius: var(--input-radius);
+    border-radius: 10px;
     outline: none;
 
-    color: var(--texto-claro);
-    background-color: var(--input-fundo);
-    border: 1px solid var(--input-borda);
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
-    transition: var(--transicao-suave);
+    transition: 0.3s ease;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .campo-grupo input:focus {
-    border-color: var(--cor-principal);
-    background-color: var(--input-fundo-focus);
-    box-shadow: 0 0 0 4px var(--cor-principal-glow);
+    border-color: #007bff;
+    background-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.25);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 button {
     width: 100%;
     padding: 15px;
-    background-color: var(--cor-principal);
-    color: var(--texto-claro);
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
-    border-radius: var(--input-radius);
+    border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     margin-top: 10px;
-    transition: var(--transicao-rapida);
-    box-shadow: 0 40px 12px var(--cor-principal-shadow);
+    transition: 0.15s ease;
+    box-shadow: 0 40px 12px rgba(0, 123, 255, 0.3);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 button:hover {
-    background-color: var(--cor-principal-hover);
+    background-color: #0056b3;
     transform: translateY(-1px);
-    box-shadow: 0 6px 15px var(--cor-principal-hover-shadow);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 button:active {
     transform: translateY(1px);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 @media (pointer: coarse) {
@@ -238,11 +238,11 @@ button:active {
     pointer-events: auto;
 
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .card-oculto {
     display: none !important;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }

@@ -1,66 +1,13 @@
 
 :root {
-    /* PALETA DE CORES PRINCIPAIS */
-    --cor-background: #05070a;
-    --cor-principal: #007bff;
-    --cor-principal-hover: #0056b3;
-    --cor-principal-glow: rgba(0, 123, 255, 0.25);
-    --cor-principal-shadow: rgba(0, 123, 255, 0.3);
-    --cor-principal-hover-shadow: rgba(0, 123, 255, 0.4);
-    --cor-erro: #ff4d4d;
 
-    --cor-teste-debug: #ff02d9;
-
-    /* CORES DE TEXTO */
-    --texto-claro: #ffffff;
-    --texto-intermediario: #e0e0e0;
-    --texto-escuro: #b3b3b3;
-    --texto-glow-titulo: rgba(212, 175, 55, 0.5);
-
-    /* CARDS E TRANSLUCIDEZ (GLASSMORPHISM) */
-    --card-fundo-inicial: rgba(10, 12, 18, 0.4);
-    --card-fundo-hover: rgba(10, 12, 18, 0.75);
-    --card-fundo-modal: rgba(10, 12, 18, 0.85);
-
-    --card-borda-inicial: rgba(255, 255, 255, 0.5);
-    --card-borda-hover: rgba(255, 255, 255, 0.15);
-    --card-borda-divisoria: rgba(255, 255, 255, 0.1);
-
-    --card-blur-inicial: blur(0px);
-    --card-blur-hover: blur(20px);
-    --card-blur-modal: blur(20px);
-
-    --card-sombra-inicial: rgba(0, 0, 0, 0);
-    --card-sombra-hover: rgba(0, 0, 0, 0.6);
-    --card-sombra-modal: rgba(0, 0, 0, 0.6);
-    --modal-fundo-overlay: rgba(0, 0, 0, 0.5);
-
-    /* INPUTS E FORMULÁRIOS */
-    --input-fundo: rgba(255, 255, 255, 0.06);
-    --input-fundo-focus: rgba(255, 255, 255, 0.12);
-    --input-borda: rgba(255, 255, 255, 0.15);
-
-    /* FONTES E TIPOGRAFIA */
-    --fonte-principal: 'Segeo UI', Arial, sans-serif;
-    --fonte-codigo: 'Courier New', Courier, monospace;
-
-    /* DIMENSÕES E ESPAÇAMENTOS */
-    --card-max-width: 440px;
-    --card-radius: 24px;
-    --input-radius: 10px;
-    --modal-radius: 20px;
-
-    /* ANIMAÇÕES E TRANSIÇÕES */
-    --transicao-suave: all 0.3s ease;
-    --transicao-rapida: all 0.2s ease;
-    --transicao-cards: opacity 0.5s ease, backdrop-filter 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--fonte-principal);
+    font-family: 'Segeo UI', Arial, sans-serif;
 
     /* border: 0px solid #ff02d9; */
 }

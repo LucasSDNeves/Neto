@@ -7,7 +7,7 @@
     height: 45px;
     border-radius: 50%;
     background-color: rgba(10, 12, 18, 0.6);
-    color: var(--texto-claro);
+    color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 20px;
     font-family: 'Segoe UI', sans-serif;
@@ -17,18 +17,18 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: var(--transicao-suave);
+    transition: 0.3s ease;
     margin-top: 0;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .btn-info:hover {
-    background-color: var(--cor-principal);
+    background-color: #007bff;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .modal-copyright {
@@ -38,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--modal-fundo-overlay);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -49,89 +49,89 @@
 }
 
 .conteudo-copyright {
-    background-color: var(--card-fundo-modal);
-    backdrop-filter: var(--card-blur-modal);
-    -webkit-backdrop-filter: var(--card-blur-modal);
-    border: 1px solid var(--card-borda-hover) !important;
+    background-color: rgba(10, 12, 18, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
     padding: 30px;
-    border-radius: var(--modal-radius);
+    border-radius: 20px;
     width: 90%;
     max-width: 400px;
-    color: var(--texto-claro);
+    color: #ffffff;
     position: relative;
-    box-shadow: var(--card-sombra-modal);
+    box-shadow: rgba(0, 0, 0, 0.6);
     text-align: center;
     transform: scale(0.9);
-    transition: var(--transicao-suave);
+    transition: 0.3s ease;
     
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .conteudo-copyright footer,
 .conteudo-copyright footer * {
-    color: var(--texto-escuro);
+    color: #444444;
     font-size: 14px;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .conteudo-copyright h3 {
     margin-bottom: 15px;
     font-size: 22px;
-    color: var(--texto-claro);
+    color: #ffffff;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .conteudo-copyright p {
     font-size: 14px;
-    color: var(--texto-escuro);
+    color: #444444;
     line-height: 1.6;
     margin-top: 10px;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .fechar-copyright {
     position: absolute;
     top: 15px;
     right: 20px;
-    color: var(--texto-escuro);
+    color: #444444;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.2s;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .fechar-copyright:hover {
-    color: var(--cor-erro);
+    color: #ff4d4d;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .modal-copyright.mostrar {
     display: flex;
     opacity: 1;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 .modal-copyright.mostrar .conteudo-copyright {
     transform: scale(1);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 
 #containerFooterModal {
     margin-top: 20px;
     padding: 20px;
-    border-top: 1px solid var(--card-borda-divisoria);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     width: 100%;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 #containerFooterModal .footer-relative,
@@ -143,7 +143,7 @@
     box-shadow: none !important;
     width: 100% !important;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 #containerFooterModal .footer-content {
@@ -152,11 +152,11 @@
     align-items: center;
     gap: 8px;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 #containerFooterModal .copyright {
-    color: var(--texto-intermediario) !important;
+    color: #e0e0e0 !important;
     font-size: 13px !important;
     font-weight: 500;
     line-height: 1.5;
@@ -164,16 +164,16 @@
     letter-spacing: 0.3px;
     text-transform: uppercase;
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
 
 #containerFooterModal .version {
-    color: var(--cor-principal) !important;
-    font-family: var(--fonte-codigo);
+    color: #007bff !important;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 11px !important;
     font-weight: bold;
     letter-spacing: 1px;
     text-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
 
-    border: 0px solid var(--cor-teste-debug);
+    border: 0px solid #ff02d9;
 }
