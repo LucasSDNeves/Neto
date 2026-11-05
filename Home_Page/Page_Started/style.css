@@ -30,6 +30,49 @@ body {
 /* =====-----===== Root =====-----===== */
 /* #region */
 :root {
-    
+    body, body[data-theme="geral"] {
+    /* Tema Padrão */
+    --bg-main: #050505;
+    --bg-mural: #030303;
+    --bg-card: #0d0f11;
+    --bg-dropdown-trigger: rgba(0, 0, 0, 0.6);
+    --bg-dropdown-list: #0a0a0a;
+    --gradient-hero: radial-gradient(circle at 80% 50%, #111111 0%, #050505 100%);
+    --gradient-stats: radial-gradient(circle at 50% 50%, rgba(0, 255, 204, 0.02) 0%, #050505 70%);
+
+    /* Fonts */
+    --font-heading: 'Black Ops One', system-ui;
+    --font-mono: 'Space Mono', monospace;
+    --font-body: 'Inter', sans-serif;
+    --font-alt: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Cor dos Textos */
+    --text-primary: #ffffff;
+    --text-muted: #aaaaaa;
+    --text-dark: #888888; /* Links desativados */
+
+    /* Accents & Themes (Destaques) */
+    --accent: #00ffcc;
+
+    /* Bordas */
+    --border-low: #111111;
+    --border-medium: #222222;
+    --border-high: #333333;
+
+    --bg-image: none;
+    }
+
+    body[data-theme="azul"] {
+        --accent: #000864;
+        --bg-image: url('Satoro.jpg');
+    }
+
+    body[data-theme="vermelho"] {
+    --accent: #8c0000;
+    }
+
+    body[data-theme="roxo"] {
+    --accent: #330072;
+    }
 }
 /* #endregion */
