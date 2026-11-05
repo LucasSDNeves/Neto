@@ -64,7 +64,6 @@ body {
 
     body[data-theme="azul"] {
         --accent: #000864;
-        --bg-image: url('Satoro.jpg');
     }
 
     body[data-theme="vermelho"] {
