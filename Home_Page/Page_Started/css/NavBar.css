@@ -12,7 +12,7 @@
     z-index: 100;
     background: rgba(5, 5, 5, 0.75);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #111111 !important;
+    border-bottom: 1px solid var(--border-low) !important;
     
     border: 0px solid #ff0090;
 }
@@ -26,26 +26,26 @@
 }
 
 .navbar .logo span {
-    color: #00ffcc;
+    color: var(--accent);
 
     border: 0px solid #ff0090;
 }
 
 .navbar nav a {
-    color: #888888;
+    color: var(--text-dark);
     text-decoration: none;
     margin-left: 30px;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-mono), monospace;
     
     border: 0px solid #ff0090;
 }
 
 .navbar nav a:hover {
-    color: #ffffff;
+    color: var(--text-primary);
 
     border: 0px solid #ff0090;
 }
@@ -53,8 +53,8 @@
 /* =====-----====== Botão-Menu ( + ) =====-----=====*/
 .btn-menu {
     background: none;
-    border: 1px solid #333333 !important;
-    color: #ffffff;
+    border: 1px solid var(--border-high) !important;
+    color: var(--text-primary);
     font-size: 1.2rem;
     padding: 8px 15px;
     cursor: pointer;
@@ -65,7 +65,7 @@
 }
 
 .btn-menu:hover {
-    border-color: #ffffff !important;
+    border-color: var(--text-primary) !important;
     
     border: 0px solid #ff0090;
 }
@@ -100,7 +100,7 @@
 
 .anel-acabamento:hover {
     opacity: 1;
-    border-color: #00ffcc !important;
+    border-color: var(--accent) !important;
     box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
 
     border: 0px solid #ff0090;
@@ -125,7 +125,7 @@
     border: none !important;
     cursor: pointer;
     background: #111111;
-    color: #888888;
+    color: var(--text-dark);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,15 +142,15 @@
 }
 .anel-acabamento:hover .botao-afundado{
     background: #151515;
-    color: #00ffcc;
+    color: var(--accent);
     
     border: 0px solid #ff0090;
 }
 
 .botao-afundado:active {
     display: flex;
-    background: #00ffcc;
-    color: #050505;
+    background: var(--accent);
+    color: var(--bg-main);
     transform: scale(0.92);
     
     border: 0px solid #ff0090;
@@ -197,7 +197,7 @@ input:user-invalid {
 }
 
 .conteudo-modal {
-    background-color: #0d0f11;
+    background-color: var(--bg-card);
     border: 1px solid rgba(0, 255, 204, 0.2) !important;
     padding: 35px 30px 25px 30px;
     border-radius: 0px 8px 0px 8px;
@@ -216,7 +216,7 @@ input:user-invalid {
     text-transform: uppercase;
     letter-spacing: -0.5px;
     margin-bottom: 5px;
-    color: #ffffff;
+    color: var(--text-primary);
 
     border: 0px solid #ff0090;
 }
@@ -259,9 +259,9 @@ input:user-invalid {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-mono), monospace;
     font-size: 0.75rem;
-    color: #00ffcc;
+    color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 1px;
 
@@ -272,9 +272,9 @@ input:user-invalid {
     width: 100%;
     padding: 12px;
     background-color: #111111;
-    border: 1px solid #222222 !important;
+    border: 1px solid var(--border-medium) !important;
     border-radius: 4px;
-    color: #ffffff;
+    color: var(--text-primary);
     box-sizing: border-box;
     transition: border-color 0.3s ease;
 
@@ -283,7 +283,7 @@ input:user-invalid {
 
 .grupo-campo input:focus {
     outline: none;
-    border-color: #00ffcc !important;
+    border-color: var(--accent) !important;
 
     border: 0px solid #ff0090;
 }
@@ -292,8 +292,8 @@ input:user-invalid {
     width: 100%;
     padding: 12px;
     background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #333333 !important;
+    color: var(--text-primary);
+    border: 1px solid var(--border-high) !important;
     border-radius: 4px;
     font-weight: bold;
     text-transform: uppercase;
@@ -306,9 +306,9 @@ input:user-invalid {
 }
 
 .botao-enviar:hover {
-    background-color: #ffffff;
-    color: #050505;
-    border-color: #ffffff !important;
+    background-color: var(--text-primary);
+    color: var(--bg-main);
+    border-color: var(--text-primary) !important;
 
     border: 0px solid #ff0090;
 }
@@ -316,7 +316,7 @@ input:user-invalid {
 .texto-erro {
     color: #ff3366 !important;
     margin-top: 15px;
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-mono), monospace;
     font-size: 0.8rem;
     font-weight: bold;
 

@@ -3,7 +3,7 @@
 /* #region dropdown */
 .theme-dropdown {
     position: relative;
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-mono), monospace;
 
     border: 0px solid #ff00d9;
 }
@@ -12,11 +12,11 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid #111111 !important;
+    background: var(--bg-dropdown-trigger);
+    border: 1px solid var(--border-low) !important;
     padding: 8px 14px;
     border-radius: 2px;
-    color: #ffffff;
+    color: var(--text-primary);
     cursor: pointer;
     font-weight: bold;
     font-size: 0.8rem;
@@ -28,7 +28,7 @@
 }
 
 .dropdown-trigger:hover {
-    border-color: #00ffcc !important;
+    border-color: var(--accent) !important;
     box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
 
     border: 0px solid #ff00d9;
@@ -48,7 +48,7 @@
     top: calc(100% + 6px);
     right: 0;
     width: 210px;
-    background: #0a0a0a;
+    background: var(--bg-dropdown-list);
     border: 1px solid rgba(0, 255, 204, 0.2) !important;
     border-radius: 2px;
     padding: 4px 0;
@@ -104,7 +104,7 @@
 
 .item-name {
     font-size: 0.8rem;
-    color: #aaaaaa;
+    color: var(--text-muted);
     text-transform: uppercase;
 
     border: 0px solid #ff00d9;
@@ -112,7 +112,7 @@
 
 .active-name {
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--text-primary);
     font-size: 0.8rem;
     letter-spacing: 1px;
 
@@ -120,7 +120,7 @@
 }
 
 .dropdown-item.active .item-name {
-    color: #00ffcc;
+    color: var(--accent);
     font-weight: bold;
 
     border: 0px solid #ff00d9;
