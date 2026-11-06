@@ -64,14 +64,20 @@ body {
 
     body[data-theme="azul"] {
         --accent: #000864;
+
+        --bg-image: url('../Img/SatoruGojo.jpg');
     }
 
     body[data-theme="vermelho"] {
-    --accent: #8c0000;
+        --accent: #8c0000;
+
+        --bg-image: url('../Img/HTTYD.jpg');
     }
 
     body[data-theme="roxo"] {
-    --accent: #330072;
+        --accent: #330072;
+
+        --bg-image: url('../Img/TonyStark.jpg');
     }
 }
 /* #endregion */
