@@ -17,6 +17,11 @@
     letter-spacing: 2px;
     color: #666666;
 
+    background: var(--bg-barras);
+    backdrop-filter: var(--blur-barras);
+    border-top: 1px solid var(--border-low) !important;
+    color: var(--text-muted);
+
     border: 0px solid #ff0090;
 }
 
@@ -33,6 +38,11 @@
     letter-spacing: 2px;
     color: #666666;
     bottom: -90px;
+
+    background: var(--bg-barras);
+    backdrop-filter: var(--blur-barras);
+    border-top: 1px solid var(--border-low) !important;
+    color: var(--text-muted);
 
     border: 0px solid #ff0090;
     

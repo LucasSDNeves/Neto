@@ -10,8 +10,8 @@
     width: 100%;
     top: 0;
     z-index: 100;
-    background: rgba(5, 5, 5, 0.75);
-    backdrop-filter: blur(10px);
+    background: var(--bg-barras);
+    backdrop-filter: var(--blur-barras);
     border-bottom: 1px solid var(--border-low) !important;
     
     border: 0px solid #ff0090;
