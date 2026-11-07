@@ -100,7 +100,7 @@
 }
 
 .mural_header_top .mural_big_title {
-    font-family: var(--font-headling), system-ui;
+    font-family: var(--font-heading), system-ui;
     font-style: oblique;
     font-size: 3rem;
     font-weight: 300;
