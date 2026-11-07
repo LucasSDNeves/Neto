@@ -14,7 +14,7 @@
     font-family: var(--font-alt), sans-serif;
     box-sizing: border-box;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_asymmetric_container {
@@ -23,8 +23,8 @@
     flex-direction: row;
     align-items: center;
     gap: 50px;
-
-    border: 0px solid #ff00ee;
+    
+    border: 0px solid #ff00d9;
 }
 
 .mural_board_container {
@@ -38,20 +38,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
+    
     height: auto;
     max-height: 420px;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 15px;
-
-    border: 0px solid #ff00ee;
+    
+    border: 0px solid #ff00d9;
 }
 
 .mural_board_container::-webkit-scrollbar {
     width: 4px;
-
-    border: 0px solid #ff00ee;
+    
+    border: 0px solid #ff00d9;
 }
 
 .mural_board_container::-webkit-scrollbar-thumb {
@@ -59,13 +59,13 @@
     border-radius: 2px;
     transition: 0.3s ease;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_board_container::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 
-    border: 0px solid #ff00ee !important;
+    border: 0px solid #ff00d9;
 }
 
 .mural_text.side_wrapper {
@@ -76,7 +76,7 @@
     gap: 20px;
     text-align: left;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_header_top {
@@ -85,22 +85,22 @@
     align-items: flex-start;
     gap: 10px;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_header_top .mural_tag {
-    font-family: 'Space Mono', monospace;
+    font-family: var(--font-mono), monospace;
     font-size: 0.85rem;
     color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_header_top .mural_big_title {
-    font-family: var(--font-heading), system-ui;
+    font-family: var(--font-headling), system-ui;
     font-style: oblique;
     font-size: 3rem;
     font-weight: 300;
@@ -109,7 +109,7 @@
     color: var(--text-primary);
     margin: 0;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_header_top .mural_big_title strong {
@@ -118,14 +118,14 @@
     -webkit-text-fill-color: initial;
     background: none;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_footer_botton {
     padding: 0;
     margin: 0;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .mural_footer_botton .mural_description {
@@ -135,124 +135,78 @@
     line-height: 1.6;
     margin: 0;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
-/* Código existente no código original e mudado em mudanças/passoas futuros. */
-/* .mural_note {
-    height: 170px;
-    padding: 16px;
-    position: relative;
-    border-radius: 2px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
-    box-shadow: 
-        0px 10px 15px -5px rgba(0, 0, 0, 0.15),
-        inset -3px -3px -5px rgba(0, 0, 0, 0.08),
-        inset 3px 3px 5px rgba(255, 255, 255, 0.15);
-    
-    
-    border: 1px solid #ff00ee !important;
-} */
-
-.mural_note_purple,
+/* =====-----===== Estilo das Notas =====-----===== */
 .mural_note {
     height: 170px;
     padding: 20px;
     position: relative;
-    border-radius: 0px;
-    /* Talvez mudar, já que são post-it's. */
+    border-radius: 4px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background: #060608;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
-.mural_board_container .mural_note_purple {
-    transform: rotate(-0.5deg);
-}
+.mural_board_container .mural_note:nth-child(1) { transform: rotate(-0.8deg); border: 0px solid #ff00d9; }
+.mural_board_container .mural_note:nth-child(2) { transform: rotate(1.2deg); border: 0px solid #ff00d9; }
+.mural_board_container .mural_note:nth-child(3) { transform: rotate(-1deg); border: 0px solid #ff00d9; }
 
-.mural_board_container .mural_note:nth-child(2) {
-    transform: rotate(1deg);
-}
+.mural_note:hover {
+    transform: translateY(-8px) scale(1.03) rotate(0deg) !important;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
+    z-index: 5;
 
-.mural_board_container .mural_note:nth-child(3) {
-    transform: rotate(-1deg);
+    border: 0px solid #ff00d9;
 }
-
 
 .note_pin {
     width: 6px;
     height: 6px;
-    background: var(--accent);
     border-radius: 50%;
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
-
-    border: 0px solid #ff00ee;
+    
+    border: 0px solid #ff00d9;
 }
 
 .note_header_bar {
     width: 100%;
     border-bottom: 1px solid var(--border-low) !important;
     padding-bottom: 6px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .note_date {
     font-family: var(--font-mono), monospace;
     font-size: 0.65rem;
-    color: #666666;
     letter-spacing: 0.5px;
 
-    border: 0px solid #ff00ee;
-}
-
-.mural_note_purple .note_date {
-    color: rgba(0, 255, 204, 0.5);
-
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .note_author {
     font-family: var(--font-mono), monospace;
     font-size: 0.65rem;
-    color: #666666;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-
     margin-top: auto;
     align-self: flex-end;
-
     transition: 0.3s ease;
 
-    border: 0px solid #ff00ee;
-}
-
-.mural_note_purple:hover .note_author {
-    color: var(--accent);
-
-    border: 0px solid #ff00ee;
-}
-
-.mural_note:hover .note_author {
-    color: var(--text-primary);
-
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .note_index {
@@ -261,7 +215,7 @@
     font-weight: bold;
     letter-spacing: 1px;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .note_text {
@@ -269,94 +223,79 @@
     font-size: 0.85rem;
     line-height: 1.5;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
-/* Murais */
-/* Neon */
-.mural_note_purple {
-    background: rgba(0, 255, 204, 0.03);
-    border: 1px solid rgba(0, 255, 204, 0.3) !important;
+/* =====-----===== Cores das Notas =====-----===== */
+/* Roxo */
+.note_roxo {
+    background: #ab21ce !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
-.mural_note_purple .note_index {
-    color: var(--accent);
-    border: 0px solid #ff00ee;
+.note_roxo .note_index { color: #ffffff; border: 0px solid #ff00d9; }
+.note_roxo .note_text { color: #ffffff; font-weight: 500; border: 0px solid #ff00d9; }
+.note_roxo .note_date, .note_roxo .note_author { color: rgba(255, 255, 255, 0.65); border: 0px solid #ff00d9; }
+.note_roxo .note_pin { background: #ffffff; box-shadow: 0 0 8px rgba(255, 255, 255, 0.4) ;border: 0px solid #ff00d9; }
+
+.note_roxo:hover {
+    background: #c23ce5 !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(171, 33, 206, 0.5);
+    
+    border: 0px solid #ff00d9;
 }
 
-.mural_note_purple .note_text {
-    color: var(--text-primary);
-    border: 0px solid #ff00ee;
+.note_roxo:hover .note_author { color: #ffffff; border: 0px solid #ff00d9; }
+
+/* Azul */
+.note_azul {
+    background: #0048c1 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    
+    border: 0px solid #ff00d9;
 }
 
-/* Dark Nota */
-.note_dark {
-    background: var(--bg-card);
-    border: 1px solid var(--border-high) !important;
+.note_azul .note_index { color: #ffffff; border: 0px solid #ff00d9; }
+.note_azul .note_text { color: #ffffff; font-weight: 500; border: 0px solid #ff00d9; }
+.note_azul .note_date, .note_azul .note_author { color: rgba(255, 255, 255, 0.6); border: 0px solid #ff00d9; }
+.note_azul .note_pin { background: #ffffff; box-shadow: 0, 0 ,8px rgba(255, 255, 255, 0.4); border: 0px solid #ff00d9; }
 
-    border: 0px solid #ff00ee;
+.note_azul:hover {
+    background: #005ae2;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 72, 193, 0.5);
+
+    border: 0px solid #ff00d9;
 }
 
-.note_dark .note_index {
-    color: var(--text-dark);
+.note_azul:hover .note_author { color: #ffffff; border: 0px solid #ff00d9; }
 
-    border: 0px solid #ff00ee;
+/* Vermelho */
+.note_vermelho {
+    background: #b40000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    
+    border: 0px solid #ff00d9;
 }
 
-.note_dark .note_text {
-    color: var(--text-muted);
+.note_vermelho .note_index { color: #ffffff; border: 0px solid #ff00d9; }
+.note_vermelho .note_text { color:#ffffff; font-weight: 500; border: 0px solid #ff00d9; }
+.note_vermelho .note_date, .note_vermelho .note_author { color: rgba(255, 255, 255, 0.6); border: 0px solid #ff00d9; }
+.note_vermelho .note_pin { background: #ffffff; box-shadow: 0 0 8px rgba(255, 255, 255, 0.4); border: 0px solid #ff00d9; }
 
-    border: 0px solid #ff00ee;
+.note_vermelho:hover {
+    background: #d60000 !important;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(180, 0, 0, 0.5);
+
+    border: 0px solid #ff00d9;
 }
 
-.note_dark .note_pin {
-    background: #444444;
-    box-shadow: none;
+.note_vermelho:hover .note_author { color: #ffffff; border: 0px solid #ff00d9; }
 
-    border: 0px solid #ff00ee;
-}
-
-/* Gray Note */
-.note_gray {
-    background: rgba(255, 255, 255, 0.01);
-    border: 1px solid var(--border-low) !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_gray .note_index {
-    color: #666666;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_gray .note_text {
-    color: var(--text-muted);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_gray .note_pin {
-    background: #444444;
-    box-shadow: none;
-
-    border: 0px solid #ff00ee;
-}
-
-
-.mural_note_purple:hover,
-.mural_note:hover {
-    transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
-    border-color: var(--accent) !important;
-    background: var(--bg-card);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    z-index: 5;
-
-    border: 0px solid #ff00ee;
-}
-
+/* Slot Vazio */
 .note_shadow_slot_blank {
     height: 170px;
     background-color: transparent;
@@ -370,15 +309,15 @@
     gap: 8px;
     cursor: not-allowed;
     transition: 0.3s ease;
-
-    border: 0px solid #ff00ee;
+    
+    border: 0px solid #ff00d9;
 }
 
 .slot_plus_icon {
     font-size: 1.3rem;
     color: #444444;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .slot_blank_text {
@@ -388,203 +327,13 @@
     color: #666666;
     letter-spacing: 1px;
 
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 
 .note_shadow_slot_blank:hover {
     background-color: rgba(255, 255, 255, 0.01);
-    border-color: #666666 !important;
+    border-color: #666666;
 
-    border: 0px solid #ff00ee;
-}
-
-@media (max-width: 968px) {
-    .mural_asymmetric_container {
-        flex-direction: column-reverse;
-        gap: 35px;
-        border: 0px solid #ff00ee;
-    }
-
-    .mural_board_container {
-        width: 100%;
-        border: 0px solid #ff00ee;
-    }
-
-    .mural_text_side_wrapper {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        border: 0px solid #ff00ee;
-    }
-
-    .mural_header_top {
-        align-items: center;
-        text-align: center;
-        border: 0px solid #ff00ee;
-    }
-}
-
-@media (max-width: 600px) {
-    .mural_board_container {
-        grid-template-columns: 1fr;
-        border: 0px solid #ff00ee;
-    }
-}
-
-/* CARD de TESTE */
-
-.note_black {
-    background: #020202;
-    border: 1px solid var(--border-low) !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_black .note_index {
-    color: var(--accent);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_black .note_text {
-    color: var(--text-primary);
-    
-    border: 0px solid #ff00ee;
-}
-
-.note_black .note_pin {
-    background: var(--accent);
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_red {
-    background: rgba(255, 51, 102, 0.03);
-    border: 1px solid rgba(255, 51, 102, 0.25) !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_red .note_index {
-    color: #ff3366;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_red .note_text {
-    color: var(--text-primary);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_red .note_date {
-    color: rgba(255, 51, 102, 0.5);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_red .note_pin {
-    background: #ff3366;
-    box-shadow: 0 0 10px rgba(255, 52, 102, 0.15);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue {
-    background: rgba(0, 102, 255, 0.04);
-    border: 1px solid rgba(0, 102, 255, 0.25) !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_index {
-    color: var(--text-primary);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_text {
-    color: var(--text-primary);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_date {
-    color: rgba(0, 102, 255, 0.5);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_pin {
-    background: #0066ff;
-    box-shadow: 0 0 10px rgba(0, 102, 255, 0.3);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_white {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_index {
-    color: var(--text-primary);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_text {
-    color: var(--text-muted);
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_date {
-    color: #666666;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue .note_pin {
-    background: var(--text-primary);
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-
-    border: 0px solid #ff00ee;
-}
-
-.mural_note:hover {
-    transform: translateY(-6px) scale(1.02) rotate(0deg) !important;
-    background: var(--bg-card);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-    z-index: 5;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_black:hover {
-    border-color: var(--accent) !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_red:hover {
-    border-color: #ff3366 !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_blue:hover {
-    border-color: #0066ff !important;
-
-    border: 0px solid #ff00ee;
-}
-
-.note_white:hover {
-    border-color: var(--text-primary) !important;
-
-    border: 0px solid #ff00ee;
+    border: 0px solid #ff00d9;
 }
 /* #endregion */
